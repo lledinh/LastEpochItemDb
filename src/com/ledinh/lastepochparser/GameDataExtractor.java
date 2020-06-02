@@ -2,8 +2,8 @@ package com.ledinh.lastepochparser;
 
 import com.ledinh.lastepochparser.conf.AssetsConfReader;
 import com.ledinh.lastepochparser.conf.AssetsPath;
+import com.ledinh.lastepochparser.parser.AvailableParser;
 import com.ledinh.lastepochparser.parser.IParser;
-import com.ledinh.lastepochparser.parser.Parser;
 import com.ledinh.lastepochparser.parser.objects.Item;
 
 import java.io.IOException;
@@ -19,7 +19,7 @@ public class GameDataExtractor {
         AssetsPath assetsPath = AssetsConfReader.read();
         String s = readFile(assetsPath.getItemsListPath(), Charset.defaultCharset());
 
-        IParser parser = new Parser.Parser078();
+        IParser parser = AvailableParser.get(GameVersion.v0_7_8);
         items = parser.parseItems(s);
     }
 

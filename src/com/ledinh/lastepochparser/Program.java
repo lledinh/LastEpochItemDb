@@ -3,7 +3,6 @@ package com.ledinh.lastepochparser;
 import com.ledinh.lastepochparser.conf.AssetsConfReader;
 import com.ledinh.lastepochparser.conf.AssetsPath;
 import com.ledinh.lastepochparser.parser.IParser;
-import com.ledinh.lastepochparser.parser.Parser;
 import com.ledinh.lastepochparser.parser.objects.Item;
 
 import java.io.IOException;
