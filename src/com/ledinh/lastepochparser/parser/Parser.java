@@ -4,13 +4,7 @@ import java.util.*;
 
 public class Parser {
 
-    public interface IParser {
-        public void parseItems(String data);
-        public void parseProperties(String data);
-        public void parseAffixes(String data);
-        public void parseUniques(String data);
-    }
-
+    /* Parser for patch 0.7.8 of the game */
     public static class Parser078 implements IParser {
         private static final String TAG_EQUIPPABLE_ITEMS = "EquippableItems";
         private static final String TAG_NON_EQUIPPABLE_ITEMS = "nonEquippableItems";
