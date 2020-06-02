@@ -1,0 +1,16 @@
+---- ItemsList ----
+Parser implicits
+Parser nonEquippableItems
+-------------------
+
+---- PropertyList ----
+Parser
+-------------------
+
+---- AffixesList ----
+Parser
+-------------------
+
+---- UniqueList ----
+Parser
+-------------------

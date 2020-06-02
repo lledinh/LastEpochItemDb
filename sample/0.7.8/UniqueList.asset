@@ -1,0 +1,6144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24d2750f498246429370e905e1eb06c, type: 3}
+  m_Name: UniqueList
+  m_EditorClassIdentifier:
+  uniques:
+  - name: Calamity
+    displayName:
+    uniqueID: 0
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 0
+    subTypes: 01
+    mods:
+    - value: 1.5
+      canRoll: 0
+      rollID: 0
+      maxValue: 1.5
+      property: 1
+      specialTag: 1
+      tags: 8
+      type: 0
+      hideInTooltip: 1
+    - value: 0.2
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.8
+      property: 0
+      specialTag: 0
+      tags: 8
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 150% chance to ignite on hit with fire skills
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: When you kill an enemy with a fire skill you take 4 fire damage over the next 2 seconds
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Set the world ablaze and burn along with it
+    tooltipEntries:
+    - modDisplay: 1
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 1
+    oldUniqueID: 1
+  - name: Fractured Crown
+    displayName:
+    uniqueID: 1
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 0
+    rerollChance: 0
+    baseType: 0
+    subTypes: 01
+    mods:
+    - value: -0.1
+      canRoll: 0
+      rollID: 0
+      maxValue: -0.1
+      property: 6
+      specialTag: 0
+      tags: 0
+      type: 2
+      hideInTooltip: 0
+    - value: 0.7
+      canRoll: 1
+      rollID: 0
+      maxValue: 1.3
+      property: 5
+      specialTag: 0
+      tags: 256
+      type: 0
+      hideInTooltip: 0
+    - value: 0.15
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.3
+      property: 69
+      specialTag: 0
+      tags: 256
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: You have no ward
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Few goals have cost more lives than the quest for power
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    oldSubTypeID: 1
+    oldUniqueID: 2
+  - name: Snowblind
+    displayName:
+    uniqueID: 2
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 0
+    subTypes: 0206
+    mods:
+    - value: 40
+      canRoll: 1
+      rollID: 0
+      maxValue: 200
+      property: 14
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.4
+      canRoll: 1
+      rollID: 1
+      maxValue: 2
+      property: 67
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 40
+      canRoll: 0
+      rollID: 0
+      maxValue: 40
+      property: 10
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.2
+      property: 1
+      specialTag: 3
+      tags: 4
+      type: 0
+      hideInTooltip: 1
+    - value: 0.2
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.2
+      property: 1
+      specialTag: 14
+      tags: 4
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: 20% chance to chill on hit with cold skills
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 20% chance to blind on hit with cold skills
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: You cannot be blinded
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Blind with the snow, never blinded by it
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    - modDisplay: 129
+    - modDisplay: 130
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: Artor Legacy
+    displayName: Artor's Legacy
+    uniqueID: 3
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 26
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 0
+    subTypes: 1c
+    mods:
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 1
+      property: 61
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.4
+      property: 1
+      specialTag: 3
+      tags: 512
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.4
+      property: 42
+      specialTag: 3
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.3
+      property: 2
+      specialTag: 0
+      tags: 512
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: The great wolf Artor ran with Heorot in times long forgotten
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    oldSubTypeID: 3
+    oldUniqueID: 1
+  - name: Decayed Skull
+    displayName:
+    uniqueID: 4
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 0
+    subTypes: 0406
+    mods:
+    - value: 0.8
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.8
+      property: 0
+      specialTag: 0
+      tags: 16
+      type: 1
+      hideInTooltip: 1
+    - value: 0.8
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.8
+      property: 0
+      specialTag: 0
+      tags: 32
+      type: 1
+      hideInTooltip: 1
+    - value: 0.2
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.2
+      property: 31
+      specialTag: 0
+      tags: 16
+      type: 0
+      hideInTooltip: 1
+    - value: 0.2
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.2
+      property: 31
+      specialTag: 0
+      tags: 32
+      type: 0
+      hideInTooltip: 1
+    - value: 30
+      canRoll: 1
+      rollID: 0
+      maxValue: 100
+      property: 10
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 80% increased void and necrotic damage
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 20% of void and necrotic damage taken as physical damage
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: A monument to the world's decay carved in bone and steel
+    tooltipEntries:
+    - modDisplay: 4
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 4
+    oldUniqueID: 1
+  - name: IsadoraRevenge
+    displayName: Isadora's Revenge
+    uniqueID: 5
+    isSetItem: 1
+    setID: 1
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 0
+    subTypes: 05
+    mods:
+    - value: 0.1
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.15
+      property: 62
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 180
+      canRoll: 1
+      rollID: 0
+      maxValue: 300
+      property: 12
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 40
+      canRoll: 0
+      rollID: 0
+      maxValue: 40
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: '"...and enraged she arose with murder in her eyes..."'
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    oldSubTypeID: 5
+    oldUniqueID: 1
+  - name: Boneclamor Barbute
+    displayName:
+    uniqueID: 6
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 0
+    subTypes: 06
+    mods:
+    - value: 150
+      canRoll: 0
+      rollID: 0
+      maxValue: 150
+      property: 10
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 6
+      canRoll: 1
+      rollID: 0
+      maxValue: 13
+      property: 22
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 6
+      canRoll: 1
+      rollID: 0
+      maxValue: 13
+      property: 21
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 150
+      canRoll: 0
+      rollID: 0
+      maxValue: 150
+      property: 27
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 15
+      canRoll: 1
+      rollID: 0
+      maxValue: 25
+      property: 92
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: '"The essence of the bone seemed to reverberate within my skull. Singing and dancing into a song of fortifying vigor. Never have I felt so alive." - Ethenus, First Legate of the Immortal Legion.'
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 4
+    oldSubTypeID: 6
+    oldUniqueID: 1
+  - name: The Falcon
+    displayName:
+    uniqueID: 7
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 1
+    subTypes: 00
+    mods:
+    - value: 30
+      canRoll: 1
+      rollID: 0
+      maxValue: 70
+      property: 11
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 15% increased movement speed if you have hit an enemy in the last 5 seconds
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: 'May the dying breaths of your enemies put air beneath your wings'
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 1
+  - name: Doublet of Onos Tull
+    displayName:
+    uniqueID: 8
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 1
+    subTypes: 01
+    mods:
+    - value: 0.4
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.4
+      property: 1
+      specialTag: 2
+      tags: 8192
+      type: 0
+      hideInTooltip: 1
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 1
+      property: 42
+      specialTag: 2
+      tags: 8192
+      type: 0
+      hideInTooltip: 1
+    - value: 60
+      canRoll: 1
+      rollID: 0
+      maxValue: 100
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: Minions have +40% Chance to Bleed on Hit
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: Minions have 100% Increased Bleed Duration
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: The horns of the Immortal Empire fill the hearts of the living with fear, and the bones of the dead with glory
+    tooltipEntries:
+    - modDisplay: 2
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 1
+    oldUniqueID: 1
+  - name: Prism Wraps
+    displayName:
+    uniqueID: 9
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 1
+    subTypes: 01
+    mods:
+    - value: -0.3
+      canRoll: 0
+      rollID: 0
+      maxValue: -0.3
+      property: 6
+      specialTag: 0
+      tags: 128
+      type: 2
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.3
+      property: 0
+      specialTag: 0
+      tags: 128
+      type: 1
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 4
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.8
+      property: 51
+      specialTag: 2
+      tags: 128
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: the elements shift like light through a prism, if you control the prism you control the elements
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    oldSubTypeID: 1
+    oldUniqueID: 2
+  - name: Urzils Pride
+    displayName: Urzil's Pride
+    uniqueID: 10
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 1
+    subTypes: 02
+    mods:
+    - value: 125
+      canRoll: 0
+      rollID: 0
+      maxValue: 25
+      property: 10
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 40
+      canRoll: 0
+      rollID: 0
+      maxValue: 40
+      property: 8
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 9
+      canRoll: 1
+      rollID: 0
+      maxValue: 15
+      property: 19
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 100
+      canRoll: 1
+      rollID: 0
+      maxValue: 200
+      property: 15
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 1% increased mana regeneration per 100 points of lightning protection
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Strength of mind and strength of body are a potent combination
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 128
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: Exsanguinous
+    displayName:
+    uniqueID: 11
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0.5
+    baseType: 1
+    subTypes: 03
+    mods:
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.3
+      property: 2
+      specialTag: 0
+      tags: 65536
+      type: 1
+      hideInTooltip: 1
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.3
+      property: 3
+      specialTag: 0
+      tags: 65536
+      type: 1
+      hideInTooltip: 1
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.3
+      property: 9
+      specialTag: 0
+      tags: 65536
+      type: 1
+      hideInTooltip: 1
+    - value: 0.2
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 98
+      specialTag: 0
+      tags: 70
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 98
+      specialTag: 0
+      tags: 69
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: '[15,30,0]% increased attack speed, cast speed, and movement speed if you have used a potion in the past 4 seconds'
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: Immunity to Bleed at low health
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Crazed is the mind of a blood starved Lich
+    tooltipEntries:
+    - modDisplay: 3
+    - modDisplay: 4
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 3
+    oldUniqueID: 1
+  - name: Preparation
+    displayName: Yrun's Wisdom
+    uniqueID: 12
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 1
+    subTypes: 04
+    mods:
+    - value: 45
+      canRoll: 1
+      rollID: 0
+      maxValue: 125
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: +30 melee cold damage when above 65% health
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 3% of melee damage leeched as health when below 65% health
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Yrun was wise in battle, but not in his betrayal of Heorot.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 4
+    oldUniqueID: 1
+  - name: Titan Heart
+    displayName:
+    uniqueID: 13
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 1
+    subTypes: 05
+    mods:
+    - value: 50
+      canRoll: 1
+      rollID: 0
+      maxValue: 100
+      property: 10
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: -1
+      canRoll: 0
+      rollID: 0
+      maxValue: -1
+      property: 17
+      specialTag: 0
+      tags: 0
+      type: 2
+      hideInTooltip: 1
+    - value: -0.1
+      canRoll: 0
+      rollID: 0
+      maxValue: -0.1
+      property: 6
+      specialTag: 0
+      tags: 0
+      type: 2
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.4
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: You do not regenerate health
+      altText: You can still regain health through methods other than health regen
+      setMod: 0
+      setRequirement: 0
+    loreText: Heart of stone, blood of gravel
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 128
+    oldSubTypeID: 5
+    oldUniqueID: 1
+  - name: Valeroot
+    displayName: Valeroot
+    uniqueID: 14
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 1
+    subTypes: 07
+    mods:
+    - value: 8
+      canRoll: 1
+      rollID: 0
+      maxValue: 12
+      property: 0
+      specialTag: 0
+      tags: 257
+      type: 0
+      hideInTooltip: 0
+    - value: 40
+      canRoll: 1
+      rollID: 1
+      maxValue: 60
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 40
+      canRoll: 1
+      rollID: 2
+      maxValue: 60
+      property: 8
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 40
+      canRoll: 1
+      rollID: 3
+      maxValue: 60
+      property: 85
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 10% chance to summon a Vale Spirit when you cast a Physical or Buff Spell
+      altText: Vale spritis are immortal spell casting minions that last for 15 seconds
+      setMod: 0
+      setRequirement: 0
+    loreText: The roots of Eterra grow through stone and flesh and time
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 128
+    oldSubTypeID: 7
+    oldUniqueID: 1
+  - name: Vipertail
+    displayName:
+    uniqueID: 15
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 6
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 2
+    subTypes: 00
+    mods:
+    - value: 0.5
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.7
+      property: 1
+      specialTag: 7
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.5
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.7
+      property: 1
+      specialTag: 6
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.05
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.1
+      property: 2
+      specialTag: 0
+      tags: 512
+      type: 1
+      hideInTooltip: 0
+    - value: 0.45
+      canRoll: 1
+      rollID: 3
+      maxValue: 0.6
+      property: 11
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: The bite of the viper brings lethargy and death
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    oldSubTypeID: 0
+    oldUniqueID: 1
+  - name: IsadoraTombbinding
+    displayName: Isadora's Tomb Binding
+    uniqueID: 16
+    isSetItem: 1
+    setID: 1
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 2
+    subTypes: 02
+    mods:
+    - value: 200
+      canRoll: 0
+      rollID: 0
+      maxValue: 200
+      property: 10
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.1
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.15
+      property: 3
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.6
+      property: 17
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: '"...with a stake they slew her, and with silver they bound her..."'
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: Ward Trail
+    displayName:
+    uniqueID: 17
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 2
+    subTypes: 05
+    mods:
+    - value: 50
+      canRoll: 1
+      rollID: 0
+      maxValue: 100
+      property: 11
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.05
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.1
+      property: 9
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: Gain 20 ward on dodge
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Many things are fickle, few more so than life itself
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    oldSubTypeID: 5
+    oldUniqueID: 1
+  - name: Chains of Uleros
+    displayName:
+    uniqueID: 18
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 2
+    subTypes: 06
+    mods:
+    - value: 0.12
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.12
+      property: 0
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 0.25
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.25
+      property: 91
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 2
+      canRoll: 1
+      rollID: 0
+      maxValue: 40
+      property: 27
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: -0.24
+      canRoll: 0
+      rollID: 0
+      maxValue: -0.24
+      property: 71
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 1
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 1
+      property: 90
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: 24% reduced duration of stuns on you
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: Your potions grant ward instead of health
+      altText: 100% of the health you would gain on potion use is gained as ward instead
+      setMod: 0
+      setRequirement: 0
+    loreText: Tether yourself to this mortal realm
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 6
+    oldUniqueID: 1
+  - name: Mourningfrost
+    displayName:
+    uniqueID: 19
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 3
+    subTypes: 01
+    mods:
+    - value: 0.03
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.1
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 0.1
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.2
+      property: 9
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: '+1 cold damage to attacks and spells per point of dexterity'
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 1% increased damage taken per point of dexterity
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Spread ice with every step, like frost before sunrise
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 1
+    oldUniqueID: 1
+  - name: Stormtide
+    displayName:
+    uniqueID: 20
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 24
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 3
+    subTypes: 02
+    mods:
+    - value: 0.3
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.3
+      property: 9
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 1.1
+      canRoll: 1
+      rollID: 0
+      maxValue: 1.5
+      property: 1
+      specialTag: 5
+      tags: 2
+      type: 0
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 1
+      rollID: 1
+      maxValue: 5
+      property: 43
+      specialTag: 5
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: You are shocked for 4 seconds when you stop moving
+      altText: '
+
+    Does not shock you if you are already shocked
+
+    Your shock effectiveness does not apply to this shock'
+      setMod: 0
+      setRequirement: 0
+    loreText: Rest was a sin among the messenger priests of Lagon, and these boots would punish the wearer accordingly.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: Eterras Path
+    displayName: Eterra's Path
+    uniqueID: 21
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 3
+    subTypes: 04
+    mods:
+    - value: 0.2
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.2
+      property: 9
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 1
+    - value: 0.2
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.2
+      property: 9
+      specialTag: 0
+      tags: 8192
+      type: 1
+      hideInTooltip: 1
+    - value: 0.8
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.8
+      property: 44
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    - value: 0.8
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.8
+      property: 44
+      specialTag: 0
+      tags: 8192
+      type: 0
+      hideInTooltip: 1
+    - value: 20
+      canRoll: 1
+      rollID: 0
+      maxValue: 80
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: You and your minions have 20% increased movement speed
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: You and your minions have 80% increased healing effectiveness
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: Every second if you are moving you have a 20% chance to cast summon vine or entangling roots
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Life grows in your footsteps
+    tooltipEntries:
+    - modDisplay: 4
+    - modDisplay: 128
+    - modDisplay: 129
+    - modDisplay: 130
+    oldSubTypeID: 4
+    oldUniqueID: 1
+  - name: Keepers Gloves
+    displayName: Keeper's Gloves
+    uniqueID: 22
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 4
+    subTypes: 00
+    mods:
+    - value: 70
+      canRoll: 1
+      rollID: 0
+      maxValue: 170
+      property: 28
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 10% chance to summon a swarm of bees on melee hit (8 second cooldown)
+      altText: Bees are melee minions and their health scales with character level and attunement
+      setMod: 0
+      setRequirement: 0
+    loreText:
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 1
+  - name: Riverbend Grasp
+    displayName:
+    uniqueID: 23
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 4
+    subTypes: 01
+    mods:
+    - value: 0.5
+      canRoll: 1
+      rollID: 0
+      maxValue: 1
+      property: 0
+      specialTag: 0
+      tags: 1024
+      type: 1
+      hideInTooltip: 0
+    - value: 30
+      canRoll: 1
+      rollID: 1
+      maxValue: 60
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.7
+      canRoll: 1
+      rollID: 2
+      maxValue: 1.4
+      property: 11
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 15% chance to throw an axe at a nearby enemy on hit
+      altText: this effect has a 1 second cooldown. The damage of the axe scales off throwing damage, strength, and dexterity
+      setMod: 0
+      setRequirement: 0
+    loreText: Move with the fluidity of water, relax and you can react without resistance
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    oldSubTypeID: 1
+    oldUniqueID: 1
+  - name: Fighting Chance
+    displayName:
+    uniqueID: 24
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 4
+    subTypes: 02
+    mods:
+    - value: 0.45
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.75
+      property: 0
+      specialTag: 0
+      tags: 512
+      type: 1
+      hideInTooltip: 0
+    - value: 0.05
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.1
+      property: 6
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 15
+      canRoll: 1
+      rollID: 2
+      maxValue: 25
+      property: 38
+      specialTag: 3
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: Fight for your life
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: Boulderfists
+    displayName:
+    uniqueID: 25
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 4
+    subTypes: 03
+    mods:
+    - value: 1.4
+      canRoll: 1
+      rollID: 0
+      maxValue: 2.4
+      property: 45
+      specialTag: 0
+      tags: 512
+      type: 0
+      hideInTooltip: 0
+    - value: -1
+      canRoll: 0
+      rollID: 0
+      maxValue: -1
+      property: 51
+      specialTag: 0
+      tags: 0
+      type: 2
+      hideInTooltip: 1
+    - value: 160
+      canRoll: 0
+      rollID: 0
+      maxValue: 160
+      property: 10
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 50
+      canRoll: 1
+      rollID: 1
+      maxValue: 100
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: You cannot leech health
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Strike with the force of a mountain
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 128
+    oldSubTypeID: 3
+    oldUniqueID: 1
+  - name: IsadoraGravechill
+    displayName: Isadora's Gravechill
+    uniqueID: 26
+    isSetItem: 1
+    setID: 1
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 4
+    subTypes: 04
+    mods:
+    - value: 12
+      canRoll: 0
+      rollID: 0
+      maxValue: 12
+      property: 0
+      specialTag: 0
+      tags: 516
+      type: 0
+      hideInTooltip: 1
+    - value: 12
+      canRoll: 0
+      rollID: 0
+      maxValue: 12
+      property: 0
+      specialTag: 0
+      tags: 260
+      type: 0
+      hideInTooltip: 1
+    - value: 12
+      canRoll: 0
+      rollID: 0
+      maxValue: 12
+      property: 0
+      specialTag: 0
+      tags: 1028
+      type: 0
+      hideInTooltip: 1
+    - value: 12
+      canRoll: 0
+      rollID: 0
+      maxValue: 12
+      property: 0
+      specialTag: 0
+      tags: 2052
+      type: 0
+      hideInTooltip: 1
+    - value: 20
+      canRoll: 1
+      rollID: 0
+      maxValue: 40
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: +12 cold damage with spells and attacks
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: +100% chance to chill with necrotic abilities if you have killed an enemy in the last 5 seconds
+      altText: recently refers to the past 4 seconds
+      setMod: 0
+      setRequirement: 0
+    loreText: '"...yet her strength was not blood, but of bone..."'
+    tooltipEntries:
+    - modDisplay: 4
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 4
+    oldUniqueID: 1
+  - name: Wing Guards
+    displayName:
+    uniqueID: 27
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 4
+    subTypes: 05
+    mods:
+    - value: 135
+      canRoll: 1
+      rollID: 0
+      maxValue: 200
+      property: 11
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.4
+      property: 2
+      specialTag: 0
+      tags: 512
+      type: 1
+      hideInTooltip: 0
+    - value: -1
+      canRoll: 0
+      rollID: 0
+      maxValue: -1
+      property: 4
+      specialTag: 0
+      tags: 0
+      type: 2
+      hideInTooltip: 1
+    - value: 0.04
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.08
+      property: 50
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: You cannot deal critical strikes
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Speed is its own accuracy
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 3
+    - modDisplay: 128
+    oldSubTypeID: 5
+    oldUniqueID: 1
+  - name: Beast King
+    displayName:
+    uniqueID: 28
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 5
+    subTypes: 0106
+    mods:
+    - value: 15
+      canRoll: 1
+      rollID: 0
+      maxValue: 25
+      property: 0
+      specialTag: 0
+      tags: 513
+      type: 0
+      hideInTooltip: 0
+    - value: 0.1
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.2
+      property: 2
+      specialTag: 0
+      tags: 512
+      type: 1
+      hideInTooltip: 0
+    - value: 0.5
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.75
+      property: 7
+      specialTag: 0
+      tags: 8192
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 8% less damage taken if your minions have killed recently
+      altText: 'Recently means in the past 4 seconds
+
+    multiplicative with other modifiers'
+      setMod: 0
+      setRequirement: 0
+    - description: minions take 25% less damage if you have killed recently
+      altText: multiplicative with other modifiers
+      setMod: 0
+      setRequirement: 0
+    loreText: The King of Beasts leads the charge
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 1
+    oldUniqueID: 1
+  - name: Taste of Blood
+    displayName:
+    uniqueID: 29
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 5
+    subTypes: 03
+    mods:
+    - value: 20
+      canRoll: 1
+      rollID: 0
+      maxValue: 30
+      property: 0
+      specialTag: 0
+      tags: 513
+      type: 0
+      hideInTooltip: 0
+    - value: 15
+      canRoll: 0
+      rollID: 0
+      maxValue: 15
+      property: 38
+      specialTag: 3
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.5
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.75
+      property: 1
+      specialTag: 2
+      tags: 512
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: When you hit a bleeding enemy with a melee attack all bleed stacks on that enemy double in speed
+      altText: When a bleed stack's speed is double its duration is halved and its damage per second is doubled
+      setMod: 0
+      setRequirement: 0
+    loreText: A bloody fervor clouds the mind
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    oldSubTypeID: 3
+    oldUniqueID: 1
+  - name: Undisputed
+    displayName:
+    uniqueID: 30
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0.5
+    baseType: 5
+    subTypes: 05
+    mods:
+    - value: 41
+      canRoll: 1
+      rollID: 0
+      maxValue: 50
+      property: 0
+      specialTag: 0
+      tags: 513
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.27
+      property: 2
+      specialTag: 0
+      tags: 512
+      type: 1
+      hideInTooltip: 0
+    - value: 0.7
+      canRoll: 1
+      rollID: 2
+      maxValue: 1.4
+      property: 93
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: '10% increased physical damage for each recent melee hit against a bleeding enemy (up to 200%)'
+      altText: Recent means in the past 4 seconds
+      setMod: 0
+      setRequirement: 0
+    loreText:
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    oldSubTypeID: 5
+    oldUniqueID: 1
+  - name: Tempest Maw
+    displayName:
+    uniqueID: 31
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 5
+    subTypes: 06
+    mods:
+    - value: 17
+      canRoll: 1
+      rollID: 0
+      maxValue: 21
+      property: 0
+      specialTag: 0
+      tags: 514
+      type: 0
+      hideInTooltip: 0
+    - value: 17
+      canRoll: 1
+      rollID: 1
+      maxValue: 21
+      property: 0
+      specialTag: 0
+      tags: 258
+      type: 0
+      hideInTooltip: 0
+    - value: -6
+      canRoll: 1
+      rollID: 2
+      maxValue: -3
+      property: 66
+      specialTag: 0
+      tags: 16384
+      type: 0
+      hideInTooltip: 0
+    - value: 3
+      canRoll: 1
+      rollID: 3
+      maxValue: 6
+      property: 23
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    - value: 3
+      canRoll: 1
+      rollID: 3
+      maxValue: 6
+      property: 19
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: +[3,6,3] Strength and Attunement
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: When you summon a totem you also summon 4 Storm Sprites around the totem (15 second cooldown)
+      altText: Storm Sprites are minions that cast lightning spells
+      setMod: 0
+      setRequirement: 0
+    loreText: A last sign of favour bestowed to those doomed to fight for Lagon's amusement in his sunken arena
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 6
+    oldUniqueID: 1
+  - name: Frozen Ire
+    displayName:
+    uniqueID: 32
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 33
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 8
+    subTypes: 02
+    mods:
+    - value: 10
+      canRoll: 1
+      rollID: 0
+      maxValue: 14
+      property: 41
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.8
+      canRoll: 1
+      rollID: 1
+      maxValue: 1.2
+      property: 0
+      specialTag: 0
+      tags: 4
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: +1 spell cold damage per 5 character levels ([1,c,5])
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: +2% freeze rate multiplier per character level ([2,c]%)
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: +4 necrotic protection per character level ([4,c])
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 15% chance to cast tundra nova on hit with cold skills (chance doubled against undead)
+      altText: Tundra nova is a cold spell that scales with your attunement and intelligence. Tundra nova is centred on the target.
+      setMod: 0
+      setRequirement: 0
+    loreText: An alliance of wengari and nomads gathered in the northern tundra, forging weapons of ice and preparing to reclaim Heoborea from the Immortal Empire.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    - modDisplay: 129
+    - modDisplay: 130
+    - modDisplay: 131
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: Culnivars Claim
+    displayName: Culnivar's Claim
+    uniqueID: 33
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 50
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 8
+    subTypes: 05
+    mods:
+    - value: 0.9
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.9
+      property: 0
+      specialTag: 0
+      tags: 258
+      type: 1
+      hideInTooltip: 0
+    - value: 0.9
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.9
+      property: 4
+      specialTag: 0
+      tags: 258
+      type: 1
+      hideInTooltip: 0
+    - value: 0.1
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.2
+      property: 18
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 14
+      canRoll: 1
+      rollID: 1
+      maxValue: 20
+      property: 0
+      specialTag: 0
+      tags: 258
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 100% of mana converted to ward when you reach full mana
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Culnivar, last scion of Liath, was a symbol of hope for the living slaves of Thetima.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 3
+    - modDisplay: 2
+    - modDisplay: 128
+    oldSubTypeID: 5
+    oldUniqueID: 1
+  - name: Humming Bee
+    displayName:
+    uniqueID: 34
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 9
+    subTypes: 00
+    mods:
+    - value: 0.2
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.25
+      property: 2
+      specialTag: 0
+      tags: 512
+      type: 1
+      hideInTooltip: 0
+    - value: 3
+      canRoll: 1
+      rollID: 1
+      maxValue: 6
+      property: 39
+      specialTag: 7
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: '1% increased elemental damage per 250 ward'
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 1% increased movement speed per 250 ward
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Bzzzzzzzzzz
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 0
+    oldUniqueID: 1
+  - name: Eye of Reen
+    displayName:
+    uniqueID: 35
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 9
+    subTypes: 02
+    mods:
+    - value: 25
+      canRoll: 1
+      rollID: 0
+      maxValue: 40
+      property: 0
+      specialTag: 0
+      tags: 520
+      type: 0
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 1
+      rollID: 0
+      maxValue: 2
+      property: 1
+      specialTag: 1
+      tags: 512
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: Gain a stack of Reen's Ire for 5 seconds on melee crit
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: Each stack of Reen's Ire grants 5% additional critical strike multiplier and 5% increased fire damage over time
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Dance through the flames
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: Rainbow Edge
+    displayName:
+    uniqueID: 36
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 30
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 9
+    subTypes: 04
+    mods:
+    - value: 0.25
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.75
+      property: 5
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 7
+      canRoll: 0
+      rollID: 0
+      maxValue: 7
+      property: 0
+      specialTag: 0
+      tags: 514
+      type: 0
+      hideInTooltip: 0
+    - value: 7
+      canRoll: 0
+      rollID: 0
+      maxValue: 7
+      property: 0
+      specialTag: 0
+      tags: 520
+      type: 0
+      hideInTooltip: 0
+    - value: 7
+      canRoll: 0
+      rollID: 0
+      maxValue: 7
+      property: 0
+      specialTag: 0
+      tags: 516
+      type: 0
+      hideInTooltip: 0
+    - value: 0.25
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.75
+      property: 1
+      specialTag: 1
+      tags: 512
+      type: 0
+      hideInTooltip: 1
+    - value: 0.25
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.75
+      property: 1
+      specialTag: 3
+      tags: 512
+      type: 0
+      hideInTooltip: 1
+    - value: 0.25
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.75
+      property: 1
+      specialTag: 5
+      tags: 512
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: +[25,75,1]% chance to shock ignite and chill on melee hit
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText:
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 128
+    oldSubTypeID: 4
+    oldUniqueID: 1
+  - name: Cinder Song
+    displayName: Cinder Song
+    uniqueID: 37
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 40
+    canDropRandomly: 1
+    rerollChance: 0.5
+    baseType: 10
+    subTypes: 00
+    mods:
+    - value: -3
+      canRoll: 0
+      rollID: 0
+      maxValue: -3
+      property: 66
+      specialTag: 0
+      tags: 264
+      type: 0
+      hideInTooltip: 1
+    - value: 0.1
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.2
+      property: 1
+      specialTag: 24
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    - value: 1.2
+      canRoll: 1
+      rollID: 1
+      maxValue: 1.7
+      property: 0
+      specialTag: 0
+      tags: 8
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: '[10,20,0]% chance to inflict Spreading Flames on Hit'
+      altText: Spreading flames deals fire damage over time and spreads between enemies. It does not stack.
+      setMod: 0
+      setRequirement: 0
+    - description: -3 Mana Cost for Fire Spells
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: Fireball has 2 additional projectiles
+      altText: This is affected by the additional projectiles penalty on the Embers node
+      setMod: 0
+      setRequirement: 0
+    loreText: An ode to fires past
+    tooltipEntries:
+    - modDisplay: 2
+    - modDisplay: 128
+    - modDisplay: 129
+    - modDisplay: 130
+    oldSubTypeID: 0
+    oldUniqueID: 1
+  - name: Alchemists Ladle
+    displayName: Alchemist's Ladle
+    uniqueID: 38
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0.5
+    baseType: 10
+    subTypes: 01
+    mods:
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.35
+      property: 1
+      specialTag: 1
+      tags: 512
+      type: 0
+      hideInTooltip: 1
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.35
+      property: 1
+      specialTag: 2
+      tags: 512
+      type: 0
+      hideInTooltip: 1
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.35
+      property: 1
+      specialTag: 3
+      tags: 512
+      type: 0
+      hideInTooltip: 1
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.35
+      property: 1
+      specialTag: 5
+      tags: 512
+      type: 0
+      hideInTooltip: 1
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.35
+      property: 1
+      specialTag: 6
+      tags: 512
+      type: 0
+      hideInTooltip: 1
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.35
+      property: 1
+      specialTag: 7
+      tags: 512
+      type: 0
+      hideInTooltip: 1
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.35
+      property: 1
+      specialTag: 14
+      tags: 512
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: '[15,35,0]% chance to ignite, chill, shock, bleed, slow, poison, and blind on melee hit'
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Infused with countless potions, its effects are unpredictable
+    tooltipEntries:
+    - modDisplay: 128
+    oldSubTypeID: 1
+    oldUniqueID: 1
+  - name: Reach of the Grave
+    displayName:
+    uniqueID: 39
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 10
+    subTypes: 02
+    mods:
+    - value: 0.7
+      canRoll: 1
+      rollID: 0
+      maxValue: 1.2
+      property: 0
+      specialTag: 0
+      tags: 10240
+      type: 1
+      hideInTooltip: 1
+    - value: 0.7
+      canRoll: 1
+      rollID: 0
+      maxValue: 1.2
+      property: 0
+      specialTag: 0
+      tags: 8448
+      type: 1
+      hideInTooltip: 1
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 1
+      property: 51
+      specialTag: 0
+      tags: 10240
+      type: 0
+      hideInTooltip: 1
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 1
+      property: 51
+      specialTag: 0
+      tags: 8448
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: Your minions' spells and bow attacks deal [70,120,0]% increased damage
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: Your minions leech 10% of damage dealt by their spells and bow attacks as health
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: The touch of death reaches far beyond the grave
+    tooltipEntries:
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: Bone Harvester
+    displayName:
+    uniqueID: 40
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 24
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 12
+    subTypes: 07
+    mods:
+    - value: 45
+      canRoll: 1
+      rollID: 0
+      maxValue: 60
+      property: 0
+      specialTag: 0
+      tags: 544
+      type: 0
+      hideInTooltip: 0
+    - value: 9
+      canRoll: 1
+      rollID: 1
+      maxValue: 13
+      property: 21
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 20% chance to summon a skeleton harvester for 15 seconds on kill
+      altText: Skeleton harvesters have 100 base health and gain 10 health per level and per point of intelligence. Skeleton harvesters gain 4% increased damage per point of intelligence.
+      setMod: 0
+      setRequirement: 0
+    loreText: Some kill without a purpose. Acolytes kill for the harvest.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    oldSubTypeID: 7
+    oldUniqueID: 1
+  - name: Hammer Of Lorent
+    displayName: Hammer of Lorent
+    uniqueID: 41
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 13
+    subTypes: 01
+    mods:
+    - value: 0.2
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.8
+      property: 1
+      specialTag: 3
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: +1 melee physical damage per level ([1,c])
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: +1% melee stun chance per level ([1,c]%)
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Lorent may be gone, but its memory will remain with you as you grow.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 1
+    oldUniqueID: 1
+  - name: Torch Of The Pontifex
+    displayName:
+    uniqueID: 42
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 13
+    subTypes: 04
+    mods:
+    - value: 13
+      canRoll: 0
+      rollID: 0
+      maxValue: 13
+      property: 0
+      specialTag: 0
+      tags: 288
+      type: 0
+      hideInTooltip: 0
+    - value: 1.3
+      canRoll: 1
+      rollID: 0
+      maxValue: 1.7
+      property: 1
+      specialTag: 1
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 1.3
+      canRoll: 1
+      rollID: 1
+      maxValue: 1.7
+      property: 0
+      specialTag: 0
+      tags: 4104
+      type: 1
+      hideInTooltip: 0
+    - value: 0.13
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.13
+      property: 6
+      specialTag: 0
+      tags: 8
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: You cremate enemies you kill, burning enemies around them
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: You have a 10% chance to summon a burning skeleton for 10 seconds when you cremate an enemy
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Pontifex Yulia, High Priest of the Immortal Empire, would sacrifice entire villages and raise burning soldiers from the ashes.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 4
+    oldUniqueID: 1
+  - name: Stormbreaker
+    displayName: Storm Breaker
+    uniqueID: 43
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 13
+    subTypes: 05
+    mods:
+    - value: 30
+      canRoll: 1
+      rollID: 0
+      maxValue: 60
+      property: 0
+      specialTag: 0
+      tags: 514
+      type: 0
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.3
+      property: 34
+      specialTag: 0
+      tags: 1
+      type: 0
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 1
+      rollID: 1
+      maxValue: 2
+      property: 51
+      specialTag: 0
+      tags: 2
+      type: 0
+      hideInTooltip: 0
+    - value: 150
+      canRoll: 0
+      rollID: 0
+      maxValue: 150
+      property: 15
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    - value: 1.5
+      canRoll: 0
+      rollID: 0
+      maxValue: 1.5
+      property: 15
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: +150 Lightning Protection
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 150% Increased Lightning Protection
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Strike with the power of the storm
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 5
+    oldUniqueID: 1
+  - name: Draalsting
+    displayName:
+    uniqueID: 44
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 14
+    subTypes: 06
+    mods:
+    - value: -0.12
+      canRoll: 1
+      rollID: 0
+      maxValue: -0.05
+      property: 2
+      specialTag: 0
+      tags: 512
+      type: 2
+      hideInTooltip: 0
+    - value: 1.75
+      canRoll: 0
+      rollID: 0
+      maxValue: 1.75
+      property: 0
+      specialTag: 0
+      tags: 64
+      type: 1
+      hideInTooltip: 0
+    - value: 1.2
+      canRoll: 1
+      rollID: 0
+      maxValue: 1.8
+      property: 1
+      specialTag: 7
+      tags: 512
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: Poison the mind, kill the heart
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    oldSubTypeID: 6
+    oldUniqueID: 1
+  - name: Morditas Reach
+    displayName: Morditas' Reach
+    uniqueID: 45
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 70
+    canDropRandomly: 1
+    rerollChance: 0.8
+    baseType: 14
+    subTypes: 07
+    mods:
+    - value: 20
+      canRoll: 1
+      rollID: 0
+      maxValue: 30
+      property: 0
+      specialTag: 0
+      tags: 516
+      type: 0
+      hideInTooltip: 1
+    - value: 0.1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.1
+      property: 51
+      specialTag: 0
+      tags: 4
+      type: 0
+      hideInTooltip: 0
+    - value: 5
+      canRoll: 1
+      rollID: 2
+      maxValue: 15
+      property: 19
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 5
+      canRoll: 0
+      rollID: 0
+      maxValue: 5
+      property: 1
+      specialTag: 23
+      tags: 512
+      type: 0
+      hideInTooltip: 1
+    - value: 20
+      canRoll: 1
+      rollID: 0
+      maxValue: 30
+      property: 0
+      specialTag: 0
+      tags: 8708
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: +500% chance to inflict Frostbite on Melee Hit
+      altText: Frostbite deals cold damage over time and each stack reduces cold protection by 50
+      setMod: 0
+      setRequirement: 0
+    - description: +[20,30,0] Melee Cold Damage for you and your minions
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Boundless ambition enshrined in ice
+    tooltipEntries:
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 7
+    oldUniqueID: 1
+  - name: Sharktooth Saw
+    displayName: Sharktooth Saw
+    uniqueID: 46
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 34
+    canDropRandomly: 0
+    rerollChance: 0
+    baseType: 14
+    subTypes: 08
+    mods:
+    - value: 0.5
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.5
+      property: 1
+      specialTag: 2
+      tags: 512
+      type: 0
+      hideInTooltip: 0
+    - value: 35
+      canRoll: 0
+      rollID: 0
+      maxValue: 35
+      property: 0
+      specialTag: 0
+      tags: 513
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 35% increased damage to bleeding targets
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 5% chance to cause you to bleed when you hit with your weapon
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText:
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 8
+    oldUniqueID: 1
+  - name: The Last Laugh
+    displayName:
+    uniqueID: 47
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 16
+    subTypes: 04
+    mods:
+    - value: 30
+      canRoll: 1
+      rollID: 0
+      maxValue: 50
+      property: 0
+      specialTag: 0
+      tags: 513
+      type: 0
+      hideInTooltip: 0
+    - value: 0.15
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.25
+      property: 65
+      specialTag: 0
+      tags: 513
+      type: 0
+      hideInTooltip: 1
+    - value: 5
+      canRoll: 0
+      rollID: 0
+      maxValue: 5
+      property: 19
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: Instantly kill enemies that are brought below [15,25,1]% health
+      altText: If you have a similar effect from an item or node then the highest threshold is used
+      setMod: 0
+      setRequirement: 0
+    - description: +5% melee critical strike chance if you have less than 100 dodge rating
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: When the headsman's blade falls, Sarno laughs in triumph
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 2
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 4
+    oldUniqueID: 1
+  - name: Volcanus
+    displayName:
+    uniqueID: 48
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 16
+    subTypes: 06
+    mods:
+    - value: 37
+      canRoll: 1
+      rollID: 0
+      maxValue: 57
+      property: 0
+      specialTag: 0
+      tags: 520
+      type: 0
+      hideInTooltip: 0
+    - value: 0.37
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.57
+      property: 0
+      specialTag: 0
+      tags: 8
+      type: 1
+      hideInTooltip: 0
+    - value: 0.7
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.7
+      property: 51
+      specialTag: 0
+      tags: 8
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 10% chance to cast flame shards on melee hit
+      altText: Flame shards deal 8% increased damage per point of intelligence or attunement
+      setMod: 0
+      setRequirement: 0
+    loreText: Crafted in the divine era in the great forges beneath the mountains of Rahyeh
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    oldSubTypeID: 6
+    oldUniqueID: 1
+  - name: Dreamthorn
+    displayName:
+    uniqueID: 49
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 16
+    subTypes: 07
+    mods:
+    - value: 25
+      canRoll: 0
+      rollID: 0
+      maxValue: 25
+      property: 0
+      specialTag: 0
+      tags: 528
+      type: 0
+      hideInTooltip: 0
+    - value: 125
+      canRoll: 0
+      rollID: 0
+      maxValue: 125
+      property: 59
+      specialTag: 0
+      tags: 16
+      type: 0
+      hideInTooltip: 0
+    - value: 0.1
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.2
+      property: 29
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 20
+      canRoll: 1
+      rollID: 1
+      maxValue: 40
+      property: 38
+      specialTag: 6
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 250
+      canRoll: 1
+      rollID: 2
+      maxValue: 450
+      property: 53
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: Eater of dreams, weaver of nightmares
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 4
+    oldSubTypeID: 7
+    oldUniqueID: 1
+  - name: The Monolith
+    displayName: The Slab
+    uniqueID: 50
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 18
+    subTypes: 00
+    mods:
+    - value: -1
+      canRoll: 0
+      rollID: 0
+      maxValue: -1000000
+      property: 6
+      specialTag: 6
+      tags: 0
+      type: 2
+      hideInTooltip: 1
+    - value: -0.4
+      canRoll: 0
+      rollID: 0
+      maxValue: -0.3
+      property: 29
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 100% less damage taken on block
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Some slabs mark the dead, this one marks the living.
+    tooltipEntries:
+    - modDisplay: 1
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 1
+  - name: Close Call
+    displayName:
+    uniqueID: 51
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 18
+    subTypes: 01
+    mods:
+    - value: -0.5
+      canRoll: 0
+      rollID: 0
+      maxValue: -0.5
+      property: 53
+      specialTag: 0
+      tags: 0
+      type: 2
+      hideInTooltip: 0
+    - value: 80
+      canRoll: 1
+      rollID: 0
+      maxValue: 180
+      property: 11
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 40% increased dodge rating for each hit you have blocked recently
+      altText: Recently is defined as within the last 4 seconds
+      setMod: 0
+      setRequirement: 0
+    loreText: Light on your feet, with a foot in the grave
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    oldSubTypeID: 1
+    oldUniqueID: 1
+  - name: Soul Bastion
+    displayName:
+    uniqueID: 52
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 18
+    subTypes: 02
+    mods:
+    - value: 0.1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.1
+      property: 29
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 500
+      canRoll: 1
+      rollID: 0
+      maxValue: 1000
+      property: 53
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: Gains a Soul Charge on kill
+      altText: Soul charges last for 10 seconds
+      setMod: 0
+      setRequirement: 0
+    - description: At 5 soul charges, casts Soul Eruption
+      altText: Soul Eruption creates 5 souls that target enemies and apply Marked for Death. Also applies Marked for Death to you.
+      setMod: 0
+      setRequirement: 0
+    loreText: The weight of souls is too much for most
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: Rahyehs Light
+    displayName: Rahyeh's Light
+    uniqueID: 53
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 18
+    subTypes: 04
+    mods:
+    - value: 100
+      canRoll: 0
+      rollID: 0
+      maxValue: 100
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.35
+      property: 0
+      specialTag: 0
+      tags: 8
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 50% less fire spell duration
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: Refresh the duration of fireshield at the cost of 80 ward at the end of its duration
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Burn with the fire of the eternal sun
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 4
+    oldUniqueID: 1
+  - name: Strong Mind
+    displayName:
+    uniqueID: 54
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 20
+    subTypes: 00
+    mods:
+    - value: 30
+      canRoll: 1
+      rollID: 0
+      maxValue: 60
+      property: 8
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 150% of maximum mana added as stun avoidance
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: Cast a small lightning explosion when you are stunned
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Stand Fast
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 0
+    oldUniqueID: 1
+  - name: Bleeding Heart
+    displayName:
+    uniqueID: 55
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 20
+    subTypes: 01
+    mods:
+    - value: -0.35
+      canRoll: 1
+      rollID: 0
+      maxValue: -0.25
+      property: 17
+      specialTag: 0
+      tags: 0
+      type: 2
+      hideInTooltip: 0
+    - value: 0.5
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.7
+      property: 51
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: You are inflicted with bleed when you cast a spell
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Drink the blood of the weak
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    oldSubTypeID: 1
+    oldUniqueID: 1
+  - name: Chimaeras Essence
+    displayName: Chimaera's Essence
+    uniqueID: 56
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 20
+    subTypes: 01
+    mods:
+    - value: 1
+      canRoll: 1
+      rollID: 0
+      maxValue: 1.6
+      property: 0
+      specialTag: 0
+      tags: 524288
+      type: 1
+      hideInTooltip: 0
+    - value: 0.05
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.1
+      property: 9
+      specialTag: 0
+      tags: 524288
+      type: 1
+      hideInTooltip: 0
+    - value: -0.25
+      canRoll: 1
+      rollID: 2
+      maxValue: -0.1
+      property: 30
+      specialTag: 0
+      tags: 524288
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: Shifting, Changing, Striking
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    oldSubTypeID: 1
+    oldUniqueID: 2
+  - name: ElementalistFrozenHeart
+    displayName: The Invoker's Frozen Heart
+    uniqueID: 57
+    isSetItem: 1
+    setID: 2
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 20
+    subTypes: 02
+    mods:
+    - value: -0.16
+      canRoll: 1
+      rollID: 0
+      maxValue: -0.06
+      property: 6
+      specialTag: 0
+      tags: 4
+      type: 2
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 50% increased freeze duration with Snap Freeze
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: ...alone with ice in his heart, he gained mastery of his art...
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: The Claw
+    displayName:
+    uniqueID: 58
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 20
+    subTypes: 03
+    mods:
+    - value: 30
+      canRoll: 1
+      rollID: 0
+      maxValue: 40
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 5
+      canRoll: 1
+      rollID: 1
+      maxValue: 9
+      property: 0
+      specialTag: 0
+      tags: 8705
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: You can summon wolves up to your maximum number of companions
+      altText: Affects the Summon Wolf skill. Does not increase your maximum number of companions.
+      setMod: 0
+      setRequirement: 0
+    - description: +[5,9,1] Melee Physical Damage for Minions
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: A wolf never hunts alone
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 129
+    - modDisplay: 128
+    oldSubTypeID: 3
+    oldUniqueID: 1
+  - name: Death Rattle
+    displayName:
+    uniqueID: 59
+    isSetItem: 0
+    setID: 1
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 20
+    subTypes: 04
+    mods:
+    - value: 0.1
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.3
+      property: 6
+      specialTag: 0
+      tags: 8192
+      type: 1
+      hideInTooltip: 1
+    - value: 1
+      canRoll: 1
+      rollID: 0
+      maxValue: 2
+      property: 5
+      specialTag: 0
+      tags: 8192
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: Your minions take [10,30,0]% increased damage
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: Regain 20 health on minion death
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: The rattle of the dying is the sound of weakness leaving the world
+    tooltipEntries:
+    - modDisplay: 1
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 4
+    oldUniqueID: 1
+  - name: The Fang
+    displayName:
+    uniqueID: 60
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 20
+    subTypes: 07
+    mods:
+    - value: 40
+      canRoll: 1
+      rollID: 0
+      maxValue: 65
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 10
+      canRoll: 1
+      rollID: 1
+      maxValue: 16
+      property: 0
+      specialTag: 0
+      tags: 8705
+      type: 0
+      hideInTooltip: 1
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 1
+      property: 56
+      specialTag: 0
+      tags: 8192
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: You can summon wolves up to your maximum number of companions
+      altText: Affects the Summon Wolf skill. Does not increase your maximum number of companions.
+      setMod: 0
+      setRequirement: 0
+    - description: +[10,16,1] Melee Physical Damage for Minions
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: Your minions cannot be stunned
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: A wolf never hunts alone
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 129
+    - modDisplay: 130
+    - modDisplay: 128
+    oldSubTypeID: 7
+    oldUniqueID: 1
+  - name: Orians Eye
+    displayName: Orian's Eye
+    uniqueID: 61
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0.97
+    baseType: 20
+    subTypes: 08
+    mods:
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 1
+      property: 32
+      specialTag: 0
+      tags: 16
+      type: 0
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 1
+      property: 13
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 50
+      canRoll: 1
+      rollID: 0
+      maxValue: 150
+      property: 8
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.5
+      canRoll: 1
+      rollID: 1
+      maxValue: 1.5
+      property: 55
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: '[50,150,1]% increased duration of stun immunity after being stunned'
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: The future burns within the prophetic lense
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    oldSubTypeID: 8
+    oldUniqueID: 1
+  - name: Ring of the Third Eye
+    displayName:
+    uniqueID: 62
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 21
+    subTypes: 00
+    mods:
+    - value: 0.3
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.3
+      property: 4
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: -0.3
+      canRoll: 0
+      rollID: 0
+      maxValue: -0.3
+      property: 5
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 30% chance to gain 15 ward on crit
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: forsee the strikes, imbue them with power
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 1
+  - name: ElementalistScorchingGrasp
+    displayName: The Invoker's Scorching Grasp
+    uniqueID: 63
+    isSetItem: 1
+    setID: 2
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 21
+    subTypes: 01
+    mods:
+    - value: 0.3
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.75
+      property: 1
+      specialTag: 1
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.75
+      property: 0
+      specialTag: 0
+      tags: 4104
+      type: 1
+      hideInTooltip: 0
+    - value: 13
+      canRoll: 0
+      rollID: 0
+      maxValue: 13
+      property: 0
+      specialTag: 0
+      tags: 520
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: ...his master fell, a firey death knell...
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    oldSubTypeID: 1
+    oldUniqueID: 1
+  - name: ElementalistStaticTouch
+    displayName: The Invoker's Static Touch
+    uniqueID: 64
+    isSetItem: 1
+    setID: 2
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 21
+    subTypes: 02
+    mods:
+    - value: 0.3
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.75
+      property: 1
+      specialTag: 5
+      tags: 256
+      type: 0
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.75
+      property: 43
+      specialTag: 5
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 13
+      canRoll: 0
+      rollID: 0
+      maxValue: 13
+      property: 0
+      specialTag: 0
+      tags: 258
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: ...electrified with ambition, he cast spells beyond his cognition...
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: Arboreal Circuit
+    displayName:
+    uniqueID: 65
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 21
+    subTypes: 03
+    mods:
+    - value: 300
+      canRoll: 1
+      rollID: 0
+      maxValue: 900
+      property: 10
+      specialTag: 0
+      tags: 8192
+      type: 0
+      hideInTooltip: 0
+    - value: 0.05
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.1
+      property: 9
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 10% chance to summon an illusory tree when hit (15 second cooldown)
+      altText: The illusory tree lasts 8 seconds and its health scales with character level and attunement
+      setMod: 0
+      setRequirement: 0
+    loreText: You can search round and round, but you are seeking an illusion.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    oldSubTypeID: 3
+    oldUniqueID: 1
+  - name: Hollow Finger
+    displayName: Hollow Finger
+    uniqueID: 66
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0.2
+    baseType: 21
+    subTypes: 07
+    mods:
+    - value: 0.4
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.7
+      property: 1
+      specialTag: 3
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 4
+      canRoll: 0
+      rollID: 0
+      maxValue: 4
+      property: 0
+      specialTag: 0
+      tags: 544
+      type: 0
+      hideInTooltip: 0
+    - value: 70
+      canRoll: 1
+      rollID: 0
+      maxValue: 130
+      property: 14
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: +1 Maximum Skeleton
+      altText: Affects the Acolyte's Summon Skeleton skill
+      setMod: 0
+      setRequirement: 0
+    loreText: Only brittle skin remains
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    oldSubTypeID: 7
+    oldUniqueID: 1
+  - name: Tome of Elements
+    displayName:
+    uniqueID: 67
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 22
+    subTypes: 00
+    mods:
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.45
+      property: 1
+      specialTag: 1
+      tags: 128
+      type: 0
+      hideInTooltip: 1
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.45
+      property: 1
+      specialTag: 3
+      tags: 128
+      type: 0
+      hideInTooltip: 1
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.45
+      property: 1
+      specialTag: 5
+      tags: 128
+      type: 0
+      hideInTooltip: 1
+    - value: 0.2
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.2
+      property: 51
+      specialTag: 0
+      tags: 128
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: +[15,45,0]% chance to chill, shock, and ignite on hit with elemental skills
+      altText: Elemental refers to fire, cold, and lightning
+      setMod: 0
+      setRequirement: 0
+    loreText: The power of the elements is greatest in their most primal state
+    tooltipEntries:
+    - modDisplay: 3
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 1
+  - name: Grimoire of Necrotic Elixers
+    displayName:
+    uniqueID: 68
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 22
+    subTypes: 02
+    mods:
+    - value: 0.6
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.9
+      property: 26
+      specialTag: 0
+      tags: 65536
+      type: 1
+      hideInTooltip: 1
+    - value: 0.6
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.9
+      property: 27
+      specialTag: 0
+      tags: 65536
+      type: 1
+      hideInTooltip: 1
+    - value: 0.6
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.9
+      property: 28
+      specialTag: 0
+      tags: 65536
+      type: 1
+      hideInTooltip: 1
+    - value: 20
+      canRoll: 0
+      rollID: 0
+      maxValue: 20
+      property: 0
+      specialTag: 0
+      tags: 66080
+      type: 0
+      hideInTooltip: 1
+    - value: 2
+      canRoll: 1
+      rollID: 1
+      maxValue: 4
+      property: 20
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.05
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.05
+      property: 60
+      specialTag: 0
+      tags: 65536
+      type: 0
+      hideInTooltip: 0
+    - value: 20
+      canRoll: 0
+      rollID: 0
+      maxValue: 20
+      property: 0
+      specialTag: 0
+      tags: 65824
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: '[60, 90, 0]% increased void protection, necrotic protection, and poison protection for 4 seconds on potion use'
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: +20 necrotic damage to melee attacks and spells for 4 seconds on potion use
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Take a quaff from draught of undeath
+    tooltipEntries:
+    - modDisplay: 4
+    - modDisplay: 5
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 2
+    oldUniqueID: 1
+  - name: Heirloom of Light
+    displayName:
+    uniqueID: 69
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 28
+    canDropRandomly: 0
+    rerollChance: 0
+    baseType: 22
+    subTypes: 03
+    mods:
+    - value: 0.5
+      canRoll: 1
+      rollID: 0
+      maxValue: 1
+      property: 17
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 5
+      canRoll: 1
+      rollID: 1
+      maxValue: 15
+      property: 38
+      specialTag: 3
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: When you cast a spell while facing East you have a 20% chance to cast radiant nova
+      altText: Radiant nova is a fire spell. Its damage scales with your attunement.
+      setMod: 0
+      setRequirement: 0
+    - description: You have 1% increased spell damage per level if you have cast radiant nova recently
+      altText: recently refers to the last 4 seconds
+      setMod: 0
+      setRequirement: 0
+    loreText: Wherever you go, the sun still rises in Solarum. Wherever you may be, Rahyeh is your judge.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 3
+    oldUniqueID: 1
+  - name: Soulfire
+    displayName:
+    uniqueID: 70
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 22
+    subTypes: 05
+    mods:
+    - value: 60
+      canRoll: 1
+      rollID: 0
+      maxValue: 70
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 1.2
+      canRoll: 1
+      rollID: 1
+      maxValue: 2.1
+      property: 1
+      specialTag: 1
+      tags: 8
+      type: 0
+      hideInTooltip: 1
+    - value: 1.2
+      canRoll: 1
+      rollID: 1
+      maxValue: 2.1
+      property: 1
+      specialTag: 1
+      tags: 32
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: +[120,210,1]% Chance to Ignite on Hit with Fire Skills and Necrotic Skills
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 60% increased fire damage if you have killed an enemy recently
+      altText: recently refers to the last 4 seconds
+      setMod: 0
+      setRequirement: 0
+    - description: 100% increased armor while ignited
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: The souls of the damned burn with eternal fire
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    - modDisplay: 129
+    - modDisplay: 130
+    oldSubTypeID: 5
+    oldUniqueID: 1
+  - name: Valdyrs Chalice
+    displayName: Valdyr's Chalice
+    uniqueID: 71
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 0
+    rerollChance: 0
+    baseType: 22
+    subTypes: 06
+    mods:
+    - value: 0.05
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.1
+      property: 86
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.25
+      property: 1
+      specialTag: 2
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.4
+      canRoll: 1
+      rollID: 2
+      maxValue: 1
+      property: 42
+      specialTag: 2
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.4
+      canRoll: 1
+      rollID: 3
+      maxValue: 1
+      property: 43
+      specialTag: 2
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.25
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.25
+      property: 51
+      specialTag: 0
+      tags: 4097
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: 2.5% of Physical Damage Over Time Leeched as Health
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: When you Kill a Bleeding Enemy you regain 10 health for each stack of bleed
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: The blood within is said to reflect the drinker's true face
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 6
+    oldUniqueID: 1
+  - name: Orchirians Petals
+    displayName: Orchirian's Petals
+    uniqueID: 72
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 0
+    rerollChance: 0
+    baseType: 22
+    subTypes: 07
+    mods:
+    - value: 0.08
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.08
+      property: 18
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 0.13
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.13
+      property: 3
+      specialTag: 0
+      tags: 1
+      type: 1
+      hideInTooltip: 1
+    - value: 0.21
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.21
+      property: 4
+      specialTag: 0
+      tags: 257
+      type: 1
+      hideInTooltip: 1
+    - value: 0.34
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.34
+      property: 45
+      specialTag: 0
+      tags: 257
+      type: 0
+      hideInTooltip: 1
+    - value: 0.55
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.55
+      property: 17
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 0.89
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.89
+      property: 0
+      specialTag: 0
+      tags: 257
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 13% Increased Cast Speed with Physical Spells
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 21% Increased Critical Strike Chance with Physical Spells
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 34% Increased Stun Chance with Physical Spells
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Petals harvested from the remains of Orchirian the Rampant, still bright with the light of an ancient sun.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    - modDisplay: 129
+    - modDisplay: 130
+    - modDisplay: 4
+    - modDisplay: 5
+    oldSubTypeID: 7
+    oldUniqueID: 1
+  - name: Plague Bearer Staff
+    displayName: Plague Bearer's Staff
+    uniqueID: 73
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 40
+    canDropRandomly: 1
+    rerollChance: 0.5
+    baseType: 15
+    subTypes: 05
+    mods:
+    - value: 1
+      canRoll: 1
+      rollID: 1
+      maxValue: 2.5
+      property: 1
+      specialTag: 7
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 1
+      property: 1
+      specialTag: 18
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    - value: 0.1
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.15
+      property: 1
+      specialTag: 15
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    - value: 0.03
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.06
+      property: 60
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.1
+      canRoll: 1
+      rollID: 3
+      maxValue: 2
+      property: 43
+      specialTag: 18
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 100% Chance To Inflict Plague on Hit
+      altText: Plague deals poison over time and spreads to enemies around the target, but does not stack.
+      setMod: 0
+      setRequirement: 0
+    - description: '[10,15,0]% Chance To Inflict Blinding Poison on Hit'
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 20% Chance To Blind Attackers
+      altText: Blind causes enemies to aim erratically, reducing the chance that they will hit you, especially at range. Blind does not stack.
+      setMod: 0
+      setRequirement: 0
+    loreText: The Plague Bearer wandered far and wide searching for a cure for his Affliction and left only death in his wake
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    - modDisplay: 4
+    - modDisplay: 129
+    - modDisplay: 130
+    - modDisplay: 3
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Ignivar Head
+    displayName: Ignivar's Head
+    uniqueID: 74
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 50
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 19
+    subTypes: 03
+    mods:
+    - value: 0.4
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.6
+      property: 0
+      specialTag: 0
+      tags: 8
+      type: 1
+      hideInTooltip: 0
+    - value: 0.5
+      canRoll: 1
+      rollID: 0
+      maxValue: 1.5
+      property: 1
+      specialTag: 1
+      tags: 262144
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: Cast Fire Aura every 2 seconds while Channelling
+      altText: Fire Aura is a spell that deals fire damage over time in an area around you. Its damage is increased by Intelligence.
+      setMod: 0
+      setRequirement: 0
+    - description: Disintegrate deals more damage equal to your spell crit chance
+      altText: If you have 40% spell crit chance Disintegrate deals 40% more damage (multiplicative with other modifiers)
+      setMod: 0
+      setRequirement: 0
+    loreText: Dying cinders illuminate the empty skull
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    - modDisplay: 1
+    - modDisplay: 129
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: The Scavenger
+    displayName:
+    uniqueID: 75
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 2
+    subTypes: 01
+    mods:
+    - value: 0.4
+      canRoll: 1
+      rollID: 0
+      maxValue: 1.2
+      property: 47
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.45
+      property: 11
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: Gain Haste for 3 Seconds on Potion Use
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Gods may fall and empires crumble, but the furtive scavenger lives on.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    - modDisplay: 1
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Liath Signet
+    displayName: Liath's Signet
+    uniqueID: 76
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 45
+    canDropRandomly: 1
+    rerollChance: 0.5
+    baseType: 21
+    subTypes: 04
+    mods:
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 62
+      specialTag: 0
+      tags: 262144
+      type: 0
+      hideInTooltip: 1
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.3
+      property: 97
+      specialTag: 0
+      tags: 262144
+      type: 0
+      hideInTooltip: 0
+    - value: 0.45
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.75
+      property: 0
+      specialTag: 0
+      tags: 2
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: 100% Chance to receive a Glancing Blow when hit while Channelling
+      altText: Grants a chance to recive a glancing blow when hit while using a channelled ability. You take half damage from glancing blows.
+      setMod: 0
+      setRequirement: 0
+    loreText: For centuries Architect Liath ensured the prosperity of Lagon's realm
+    tooltipEntries:
+    - modDisplay: 128
+    - modDisplay: 1
+    - modDisplay: 2
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Bee Keeper Helmet
+    displayName:
+    uniqueID: 77
+    isSetItem: 1
+    setID: 3
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 0
+    rerollChance: 0
+    baseType: 0
+    subTypes: 00
+    mods:
+    - value: 5
+      canRoll: 0
+      rollID: 0
+      maxValue: 10
+      property: 98
+      specialTag: 0
+      tags: 4
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText:
+    tooltipEntries:
+    - modDisplay: 0
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Bee Keeper Armor
+    displayName:
+    uniqueID: 78
+    isSetItem: 1
+    setID: 3
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 0
+    rerollChance: 0
+    baseType: 1
+    subTypes: 00
+    mods:
+    - value: 7
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 98
+      specialTag: 0
+      tags: 4
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText:
+    tooltipEntries:
+    - modDisplay: 0
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Bee Keeper Belt
+    displayName:
+    uniqueID: 79
+    isSetItem: 1
+    setID: 3
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 0
+    rerollChance: 0
+    baseType: 2
+    subTypes: 00
+    mods:
+    - value: 3
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 98
+      specialTag: 0
+      tags: 4
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText:
+    tooltipEntries:
+    - modDisplay: 0
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Bloodgeon
+    displayName:
+    uniqueID: 80
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0.5
+    baseType: 7
+    subTypes: 05
+    mods:
+    - value: 20
+      canRoll: 1
+      rollID: 0
+      maxValue: 35
+      property: 0
+      specialTag: 0
+      tags: 513
+      type: 0
+      hideInTooltip: 0
+    - value: 0.7
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 51
+      specialTag: 0
+      tags: 513
+      type: 0
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.5
+      property: 102
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.5
+      property: 95
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 4
+      canRoll: 1
+      rollID: 3
+      maxValue: 8
+      property: 38
+      specialTag: 5
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: Crush. Maul. Bludgeon.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 4
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Ucenui Sphere
+    displayName: Ucenui's Sphere
+    uniqueID: 81
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 22
+    subTypes: 08
+    mods:
+    - value: 20
+      canRoll: 1
+      rollID: 0
+      maxValue: 40
+      property: 8
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 20
+      canRoll: 1
+      rollID: 1
+      maxValue: 40
+      property: 14
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    - value: 20
+      canRoll: 1
+      rollID: 1
+      maxValue: 40
+      property: 15
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 98
+      specialTag: 0
+      tags: 28
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: +[20,40,1] Cold and Lightning Protection
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 3 Water Orbs per cast if your Attunement is Equal to your Intelligence
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: 30% increased Cold and Lightning Damage for each Water Orb you have cast in the past 12 seconds
+      altText: Bonus Water Orbs also apply this buff
+      setMod: 0
+      setRequirement: 0
+    loreText: Ucenui the navigator used his water magic to explore the vast ocean beyond the Isle of Storms. His fate is unknown, but his instrument remains.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    - modDisplay: 3
+    - modDisplay: 129
+    - modDisplay: 130
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Arek Bones
+    displayName: Arek's Bones
+    uniqueID: 82
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 63
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 7
+    subTypes: 06
+    mods:
+    - value: 20
+      canRoll: 1
+      rollID: 0
+      maxValue: 50
+      property: 0
+      specialTag: 0
+      tags: 513
+      type: 0
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 98
+      specialTag: 0
+      tags: 30
+      type: 0
+      hideInTooltip: 0
+    - value: 0.6
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.9
+      property: 1
+      specialTag: 8
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    - value: 0.6
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.9
+      property: 1
+      specialTag: 8
+      tags: 8192
+      type: 0
+      hideInTooltip: 1
+    - value: 1
+      canRoll: 1
+      rollID: 2
+      maxValue: 2
+      property: 43
+      specialTag: 8
+      tags: 0
+      type: 0
+      hideInTooltip: 1
+    - value: 1
+      canRoll: 1
+      rollID: 2
+      maxValue: 2
+      property: 43
+      specialTag: 8
+      tags: 8192
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: +[60,90,1]% Chance to apply Armour Shred on Hit for You and Your Minions
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: '[100, 200, 2]% Increased Armour Shred Effect for You and Your Minions'
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: The necromancers were careful to keep Arek's mind intact while they extracted the bones from his flesh.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 128
+    - modDisplay: 129
+    - modDisplay: 1
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Maehlin Hubris
+    displayName: Maehlin's Hubris
+    uniqueID: 83
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 47
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 4
+    subTypes: 05
+    mods:
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 100
+      specialTag: 2
+      tags: 1
+      type: 0
+      hideInTooltip: 0
+    - value: 3
+      canRoll: 1
+      rollID: 0
+      maxValue: 6
+      property: 20
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 3
+      canRoll: 1
+      rollID: 1
+      maxValue: 6
+      property: 21
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.6
+      property: 0
+      specialTag: 0
+      tags: 4104
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: Maehlin devoted his life to Rahyeh. Seeking to learn his will he reached into the god's mind. Rahyeh reached back into his and set his blood aflame.
+    tooltipEntries:
+    - modDisplay: 3
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 0
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Heirloom of the Last Nomad
+    displayName:
+    uniqueID: 84
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 63
+    canDropRandomly: 1
+    rerollChance: 0.7
+    baseType: 21
+    subTypes: 01
+    mods:
+    - value: 100
+      canRoll: 1
+      rollID: 0
+      maxValue: 140
+      property: 7
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 100
+      canRoll: 1
+      rollID: 1
+      maxValue: 140
+      property: 14
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 100
+      canRoll: 1
+      rollID: 2
+      maxValue: 140
+      property: 26
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 3
+      maxValue: 0.4
+      property: 95
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.8
+      canRoll: 1
+      rollID: 4
+      maxValue: 0.9
+      property: 71
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 98
+      specialTag: 0
+      tags: 24
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: Using a Potion Cleanses Stun and Freeze
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: The last nomad wandered the northern wastes in the dying days of the Ruined Era, searching in vain for a living soul among the void and snow.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 4
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Sunforged Hammer
+    displayName:
+    uniqueID: 85
+    isSetItem: 1
+    setID: 4
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 13
+    subTypes: 08
+    mods:
+    - value: 0.2
+      canRoll: 1
+      rollID: 4
+      maxValue: 0.4
+      property: 95
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 10
+      canRoll: 1
+      rollID: 0
+      maxValue: 14
+      property: 0
+      specialTag: 0
+      tags: 513
+      type: 0
+      hideInTooltip: 0
+    - value: 10
+      canRoll: 1
+      rollID: 1
+      maxValue: 14
+      property: 0
+      specialTag: 0
+      tags: 520
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.3
+      property: 5
+      specialTag: 0
+      tags: 513
+      type: 0
+      hideInTooltip: 1
+    - value: 0.2
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.3
+      property: 5
+      specialTag: 0
+      tags: 520
+      type: 0
+      hideInTooltip: 1
+    - value: 0.4
+      canRoll: 1
+      rollID: 3
+      maxValue: 0.7
+      property: 58
+      specialTag: 1
+      tags: 218
+      type: 0
+      hideInTooltip: 1
+    - value: 0.4
+      canRoll: 1
+      rollID: 3
+      maxValue: 0.7
+      property: 58
+      specialTag: 0
+      tags: 354
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: +[20,30,2]% Critical strike multiplier with physical or fire melee attacks
+      altText:
+      setMod: 0
+      setRequirement: 0
+    - description: '[40, 70,3]% More damage to ignited enemies with Forge Strike and Smelter''s Wrath'
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText:
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    - modDisplay: 129
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Sunforged Cuirass
+    displayName:
+    uniqueID: 86
+    isSetItem: 1
+    setID: 4
+    overrideLevelRequirement: 1
+    levelRequirement: 60
+    canDropRandomly: 1
+    rerollChance: 0.2
+    baseType: 1
+    subTypes: 27
+    mods:
+    - value: 400
+      canRoll: 1
+      rollID: 0
+      maxValue: 500
+      property: 10
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 400
+      canRoll: 1
+      rollID: 1
+      maxValue: 500
+      property: 13
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.08
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.12
+      property: 98
+      specialTag: 0
+      tags: 37
+      type: 0
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 1
+      rollID: 3
+      maxValue: 1.4
+      property: 98
+      specialTag: 0
+      tags: 38
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText:
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Sunforged Greathelm
+    displayName:
+    uniqueID: 87
+    isSetItem: 1
+    setID: 4
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 0
+    subTypes: 05
+    mods:
+    - value: 0.1
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.2
+      property: 10
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 0.1
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.2
+      property: 13
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 3
+      maxValue: 0.4
+      property: 31
+      specialTag: 0
+      tags: 64
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.4
+      property: 32
+      specialTag: 0
+      tags: 32
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText:
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Blade of the Forgotten Knight
+    displayName:
+    uniqueID: 88
+    isSetItem: 1
+    setID: 5
+    overrideLevelRequirement: 0
+    levelRequirement: 60
+    canDropRandomly: 1
+    rerollChance: 0.7
+    baseType: 9
+    subTypes: 06
+    mods:
+    - value: 15
+      canRoll: 1
+      rollID: 0
+      maxValue: 25
+      property: 0
+      specialTag: 0
+      tags: 528
+      type: 0
+      hideInTooltip: 0
+    - value: 35
+      canRoll: 1
+      rollID: 1
+      maxValue: 50
+      property: 0
+      specialTag: 0
+      tags: 272
+      type: 0
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.7
+      property: 0
+      specialTag: 0
+      tags: 16
+      type: 1
+      hideInTooltip: 0
+    - value: 0.1
+      canRoll: 1
+      rollID: 3
+      maxValue: 0.15
+      property: 50
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 3
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 1
+    - value: 0.1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 2
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: 10% increased attack and cast speed
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Incongruous shards of iron from distant eras woven together through time
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Defiance of the Forgotten Knight
+    displayName:
+    uniqueID: 89
+    isSetItem: 1
+    setID: 5
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 18
+    subTypes: 01
+    mods:
+    - value: 0.5
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.7
+      property: 0
+      specialTag: 0
+      tags: 16
+      type: 1
+      hideInTooltip: 0
+    - value: 0.05
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.07
+      property: 29
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.05
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.07
+      property: 98
+      specialTag: 0
+      tags: 39
+      type: 0
+      hideInTooltip: 0
+    - value: -0.5
+      canRoll: 0
+      rollID: 0
+      maxValue: -0.3
+      property: 6
+      specialTag: 6
+      tags: 16
+      type: 2
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: Dread not the passage of time nor the eternal void beyond
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Locket of the Forgotten Knight
+    displayName:
+    uniqueID: 90
+    isSetItem: 1
+    setID: 5
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0.7
+    baseType: 20
+    subTypes: 02
+    mods:
+    - value: 0.3
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.5
+      property: 0
+      specialTag: 0
+      tags: 16
+      type: 1
+      hideInTooltip: 0
+    - value: 0.02
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.03
+      property: 4
+      specialTag: 0
+      tags: 16
+      type: 0
+      hideInTooltip: 0
+    - value: 30
+      canRoll: 1
+      rollID: 2
+      maxValue: 50
+      property: 10
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.15
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.2
+      property: 98
+      specialTag: 0
+      tags: 40
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: A sanctuary for memories lost
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Fiery Dragon Shoes
+    displayName:
+    uniqueID: 91
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0.7
+    baseType: 3
+    subTypes: 06
+    mods:
+    - value: 0.2
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.25
+      property: 9
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 0.25
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.35
+      property: 43
+      specialTag: 1
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 50
+      canRoll: 1
+      rollID: 2
+      maxValue: 100
+      property: 13
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.4
+      canRoll: 1
+      rollID: 3
+      maxValue: 0.5
+      property: 98
+      specialTag: 0
+      tags: 42
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText:
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Jungle Queen Chaps of Holding
+    displayName: Jungle Queen's Chaps of Holding
+    uniqueID: 92
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0.9
+    baseType: 2
+    subTypes: 01
+    mods:
+    - value: 6
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 49
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 5
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 22
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.25
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.5
+      property: 0
+      specialTag: 0
+      tags: 1
+      type: 1
+      hideInTooltip: 0
+    - value: 0.25
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.5
+      property: 0
+      specialTag: 0
+      tags: 8193
+      type: 1
+      hideInTooltip: 0
+    - value: 0.25
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.5
+      property: 11
+      specialTag: 0
+      tags: 65536
+      type: 1
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: The lack of a bottom means that there is more material for pockets.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 1
+    - modDisplay: 4
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Kermodes Cage
+    displayName: Kermode's Cage
+    uniqueID: 93
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 54
+    canDropRandomly: 1
+    rerollChance: 0.2
+    baseType: 1
+    subTypes: 1c
+    mods:
+    - value: 2
+      canRoll: 0
+      rollID: 0
+      maxValue: 2
+      property: 58
+      specialTag: 3
+      tags: 215
+      type: 0
+      hideInTooltip: 0
+    - value: 150
+      canRoll: 1
+      rollID: 0
+      maxValue: 300
+      property: 52
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 5
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 19
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.25
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.35
+      property: 3
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: 10
+      canRoll: 1
+      rollID: 2
+      maxValue: 20
+      property: 58
+      specialTag: 0
+      tags: 215
+      type: 0
+      hideInTooltip: 0
+    - value: 0.25
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 58
+      specialTag: 1
+      tags: 215
+      type: 0
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 58
+      specialTag: 2
+      tags: 215
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: White Fur in Werebear Form
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: The fury of the spirit bear can not be restrained or subdued, even while confined.
+    tooltipEntries:
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 4
+    - modDisplay: 5
+    - modDisplay: 0
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: The Last Bears Fury
+    displayName: The Last Bear's Fury
+    uniqueID: 94
+    isSetItem: 1
+    setID: 6
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 4
+    subTypes: 04
+    mods:
+    - value: 0.2
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.5
+      property: 0
+      specialTag: 0
+      tags: 513
+      type: 1
+      hideInTooltip: 0
+    - value: 0.02
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 98
+      specialTag: 0
+      tags: 45
+      type: 0
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 1
+      maxValue: 1
+      property: 45
+      specialTag: 0
+      tags: 512
+      type: 0
+      hideInTooltip: 0
+    - value: 0.03
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 58
+      specialTag: 0
+      tags: 19
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: The last bear stood alone against the void, guarding the cave in which she thought her cubs still rested.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: The Last Bears Scorn
+    displayName: The Last Bear's Scorn
+    uniqueID: 95
+    isSetItem: 1
+    setID: 6
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 1
+    subTypes: 04
+    mods:
+    - value: 10
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 19
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 40
+      specialTag: 3
+      tags: 524288
+      type: 0
+      hideInTooltip: 0
+    - value: 0.15
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.25
+      property: 51
+      specialTag: 1
+      tags: 1
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: The last bear's bloodline survived wars between gods, and empires.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: The Last Bears Lament
+    displayName: The Last Bear's Lament
+    uniqueID: 96
+    isSetItem: 1
+    setID: 6
+    overrideLevelRequirement: 1
+    levelRequirement: 28
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 0
+    subTypes: 04
+    mods:
+    - value: 100
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 26
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.05
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.15
+      property: 69
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 98
+      specialTag: 0
+      tags: 48
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: The last bear's ancestors watched as the Temple of Eterra fell from the sky.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Halvars Pledge
+    displayName: Halvar's Pledge
+    uniqueID: 97
+    isSetItem: 1
+    setID: 7
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0.2
+    baseType: 15
+    subTypes: 07
+    mods:
+    - value: 10
+      canRoll: 1
+      rollID: 0
+      maxValue: 15
+      property: 0
+      specialTag: 0
+      tags: 257
+      type: 0
+      hideInTooltip: 0
+    - value: 0.02
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.04
+      property: 4
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 7
+      canRoll: 1
+      rollID: 3
+      maxValue: 10
+      property: 23
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 30
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 8
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.05
+      canRoll: 1
+      rollID: 4
+      maxValue: 0.1
+      property: 69
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: The shaman Halvar bound himself with the spirit of the mountain.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 4
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Halvars Stand
+    displayName: Halvar’s Stand
+    uniqueID: 98
+    isSetItem: 1
+    setID: 7
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 3
+    subTypes: 05
+    mods:
+    - value: 1
+      canRoll: 1
+      rollID: 0
+      maxValue: 2
+      property: 67
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.05
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.1
+      property: 69
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 2
+      maxValue: 0.6
+      property: 98
+      specialTag: 0
+      tags: 56
+      type: 0
+      hideInTooltip: 0
+    - value: 0.03
+      canRoll: 0
+      rollID: 3
+      maxValue: 0.03
+      property: 98
+      specialTag: 0
+      tags: 64
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: When Morditas’ army closed in on him, Halvar asked the mountain to bury them together.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Last Gift of the Mountain
+    displayName:
+    uniqueID: 99
+    isSetItem: 1
+    setID: 7
+    overrideLevelRequirement: 1
+    levelRequirement: 42
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 22
+    subTypes: 07
+    mods:
+    - value: 0.3
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.6
+      property: 98
+      specialTag: 0
+      tags: 53
+      type: 0
+      hideInTooltip: 0
+    - value: 0.3
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.6
+      property: 45
+      specialTag: 0
+      tags: 256
+      type: 0
+      hideInTooltip: 0
+    - value: 0.5
+      canRoll: 1
+      rollID: 2
+      maxValue: 1
+      property: 1
+      specialTag: 8
+      tags: 256
+      type: 0
+      hideInTooltip: 0
+    - value: 0.5
+      canRoll: 1
+      rollID: 3
+      maxValue: 1
+      property: 1
+      specialTag: 23
+      tags: 256
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: The mountain was sad to lose a friend as true as Halvar.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Pebbles Femur
+    displayName: Pebbles' Femur
+    uniqueID: 100
+    isSetItem: 1
+    setID: 8
+    overrideLevelRequirement: 1
+    levelRequirement: 30
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 10
+    subTypes: 02
+    mods:
+    - value: 0.8
+      canRoll: 1
+      rollID: 0
+      maxValue: 1.2
+      property: 0
+      specialTag: 0
+      tags: 8704
+      type: 1
+      hideInTooltip: 0
+    - value: 3
+      canRoll: 0
+      rollID: 1
+      maxValue: 20
+      property: 0
+      specialTag: 0
+      tags: 8706
+      type: 0
+      hideInTooltip: 1
+    - value: 3
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 21
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 100
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 15
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: +3 Melee Lightning Damage for Minions
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: Feeding Pebbles was one of my favorite things to do. -Traveling Merchant
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Pebbles Collar
+    displayName: Pebbles' Collar
+    uniqueID: 101
+    isSetItem: 1
+    setID: 8
+    overrideLevelRequirement: 1
+    levelRequirement: 12
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 22
+    subTypes: 00
+    mods:
+    - value: 0.15
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 0
+      specialTag: 0
+      tags: 8192
+      type: 1
+      hideInTooltip: 0
+    - value: 3
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 21
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 100
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 14
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 3
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 0
+      specialTag: 0
+      tags: 8708
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: +3 Melee Cold Damage for Minions
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: The bones in Pebbles' body respond to metal like a magnet. I’m beginning to think I’m in over my head. -Traveling Merchant
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Pebbles Bitemarked Sash
+    displayName: Pebbles' Bitemarked Sash
+    uniqueID: 102
+    isSetItem: 1
+    setID: 8
+    overrideLevelRequirement: 1
+    levelRequirement: 12
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 2
+    subTypes: 00
+    mods:
+    - value: 0.15
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 0
+      specialTag: 0
+      tags: 8192
+      type: 1
+      hideInTooltip: 0
+    - value: 3
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 21
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 100
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 13
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 3
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 0
+      specialTag: 0
+      tags: 8712
+      type: 0
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: +3 Melee Fire Damage for Minions
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: As I lay in the ditch pulling my entrails back into my body, I wonder; who is the pet now?  -Traveling Merchant
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Legacy of the Quiet Forest
+    displayName:
+    uniqueID: 103
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 50
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 2
+    subTypes: 04
+    mods:
+    - value: 50
+      canRoll: 1
+      rollID: 0
+      maxValue: 100
+      property: 10
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 75
+      canRoll: 1
+      rollID: 1
+      maxValue: 150
+      property: 26
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 100
+      canRoll: 1
+      rollID: 2
+      maxValue: 200
+      property: 28
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 3
+      maxValue: 0.3
+      property: 28
+      specialTag: 0
+      tags: 524288
+      type: 1
+      hideInTooltip: 0
+    - value: 10
+      canRoll: 1
+      rollID: 4
+      maxValue: 15
+      property: 58
+      specialTag: 1
+      tags: 223
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: “This branch will protect you, even when I can not.” - the last words Quiet heard from her forest friend.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    - modDisplay: 3
+    - modDisplay: 4
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Suloron Step
+    displayName: Suloron's Step
+    uniqueID: 104
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 57
+    canDropRandomly: 1
+    rerollChance: 0.6
+    baseType: 3
+    subTypes: 04
+    mods:
+    - value: 0.5
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.65
+      property: 5
+      specialTag: 0
+      tags: 512
+      type: 0
+      hideInTooltip: 0
+    - value: 0.2
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.25
+      property: 9
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 0
+    - value: -0.5
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 62
+      specialTag: 0
+      tags: 0
+      type: 1
+      hideInTooltip: 1
+    tooltipDescriptions:
+    - description: Halves your chance to receive a Glancing Blow
+      altText: Does not reduce the glancing blow cap to below 100%
+      setMod: 0
+      setRequirement: 0
+    loreText: The rebel Suloron struck deep into Majasa's territory, but his fervour could not save him from the matrons' blades.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: The Ashen Crown
+    displayName:
+    uniqueID: 105
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 0
+    levelRequirement: 0
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 0
+    subTypes: 14
+    mods:
+    - value: 2
+      canRoll: 0
+      rollID: 0
+      maxValue: 0.5
+      property: 46
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 0.1
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.2
+      property: 95
+      specialTag: 0
+      tags: 0
+      type: 0
+      hideInTooltip: 0
+    - value: 1
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 58
+      specialTag: 1
+      tags: 12
+      type: 0
+      hideInTooltip: 1
+    - value: 0.4
+      canRoll: 1
+      rollID: 0
+      maxValue: 0.8
+      property: 32
+      specialTag: 0
+      tags: 1
+      type: 0
+      hideInTooltip: 0
+    - value: 0.4
+      canRoll: 1
+      rollID: 1
+      maxValue: 0.8
+      property: 45
+      specialTag: 0
+      tags: 256
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions:
+    - description: Elemental Nova is now cast at the target location
+      altText:
+      setMod: 0
+      setRequirement: 0
+    loreText: The great crown of the regent of Wyvernfall, bestowed by Rahyeh, recovered from the ruins.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 3
+    - modDisplay: 4
+    - modDisplay: 1
+    - modDisplay: 128
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  - name: Shroud of Obscurity
+    displayName:
+    uniqueID: 106
+    isSetItem: 0
+    setID: 0
+    overrideLevelRequirement: 1
+    levelRequirement: 13
+    canDropRandomly: 1
+    rerollChance: 0
+    baseType: 1
+    subTypes: 0c
+    mods:
+    - value: 0.2
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 98
+      specialTag: 0
+      tags: 70
+      type: 0
+      hideInTooltip: 0
+    - value: 0.13
+      canRoll: 0
+      rollID: 0
+      maxValue: 0
+      property: 98
+      specialTag: 0
+      tags: 69
+      type: 0
+      hideInTooltip: 0
+    - value: 1.3
+      canRoll: 0
+      rollID: 0
+      maxValue: 1.9
+      property: 43
+      specialTag: 2
+      tags: 1048576
+      type: 0
+      hideInTooltip: 0
+    tooltipDescriptions: []
+    loreText: Shrouded in a fetid swamp, disregarded by the gods' watchful eyes, the witches of Urix honed the art of blood magic.
+    tooltipEntries:
+    - modDisplay: 0
+    - modDisplay: 1
+    - modDisplay: 2
+    oldSubTypeID: 0
+    oldUniqueID: 0
+  filteredList: []

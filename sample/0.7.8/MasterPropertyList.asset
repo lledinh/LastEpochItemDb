@@ -1,0 +1,1373 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f3edf50e2717c84f9d85ed9954e97eb, type: 3}
+  m_Name: MasterPropertyList
+  m_EditorClassIdentifier:
+  defaultProperty:
+    roundAddedToInt: 0
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName:
+    property: 0
+    defaultAltText:
+    altTextOverrides: []
+  propertyInfoList:
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Damage
+    property: 0
+    defaultAltText: Increases the damage you deal
+    altTextOverrides:
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 513
+      overrideAltText: Adds physical damage to your melee attacks
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 256
+      overrideAltText: Increases the damage you deal with spells
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 520
+      overrideAltText: Adds fire damage to your melee attacks
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 516
+      overrideAltText: Adds cold damage to your melee attacks
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 514
+      overrideAltText: Adds lightning damage to your melee attacks
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 528
+      overrideAltText: Adds void damage to your melee attacks
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 544
+      overrideAltText: Adds necrotic damage to your melee attacks
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 257
+      overrideAltText: Adds physical damage to your spells
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 264
+      overrideAltText: Adds fire damage to your spells
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 260
+      overrideAltText: Adds cold damage to your spells
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 258
+      overrideAltText: Adds lightning damage to your spells
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 272
+      overrideAltText: Adds void damage to your spells
+    - property: 0
+      modType: 0
+      specialTag: 0
+      tags: 288
+      overrideAltText: Adds necrotic damage to your spells
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 1
+      overrideAltText: Increases the physical damage you deal
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 128
+      overrideAltText: Increases the fire, cold and lightning damage you deal
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 8
+      overrideAltText: Increases the fire damage you deal
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 4
+      overrideAltText: Increases the cold damage you deal
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 2
+      overrideAltText: Increases the lightning damage you deal
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 16
+      overrideAltText: Increases the void damage you deal
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 32
+      overrideAltText: Increases the necrotic damage you deal
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 64
+      overrideAltText: Increases the poison damage you deal
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 512
+      overrideAltText: Increases the damage you deal with melee attacks
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 513
+      overrideAltText: Increases the physical damage you deal with melee attacks
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 4096
+      overrideAltText: Increases the damage over time you deal
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 8192
+      overrideAltText: Increases the damage your minions deal
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 8193
+      overrideAltText: Increases the physical damage your minions deal
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 65792
+      overrideAltText: Increases the damage you deal with spells if you have used a potion in the past 4 seconds
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 262144
+      overrideAltText: Increases the damage you deal while using a channelled skill
+    - property: 0
+      modType: 1
+      specialTag: 0
+      tags: 8388608
+      overrideAltText: Increases all damage dealt on hit. Does not affect damage over time.
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Ailment Chance
+    property: 1
+    defaultAltText: Inflicts an ailment on hit
+    altTextOverrides:
+    - property: 1
+      modType: 0
+      specialTag: 7
+      tags: 0
+      overrideAltText: Adds to your chance to inflict an enemy with poison when you hit it. Poison deals poison damage over time and reduces poison resistance. An enemy can be inflicted with multiple instances of poison at once.
+    - property: 1
+      modType: 0
+      specialTag: 1
+      tags: 0
+      overrideAltText: Adds to your chance to ignite an enemy when you hit it. Ignites deals fire damage over time. An enemy can have multiple ignites at once.
+    - property: 1
+      modType: 0
+      specialTag: 3
+      tags: 0
+      overrideAltText: Adds to your chance to chill an enemy when you hit it. Chill reduces attack speed, cast speed, and movement speed by 12%, and stacks up to 3 times.
+    - property: 1
+      modType: 0
+      specialTag: 6
+      tags: 0
+      overrideAltText: Adds to your chance to slow an enemy when you hit it.  Slow reduces movement speed by 20% and stacks up to 3 times.
+    - property: 1
+      modType: 0
+      specialTag: 14
+      tags: 0
+      overrideAltText: Adds to your chance to blind an enemy when you hit it. Blind causes enemies to aim erratically, reducing the chance that they will hit you, especially at range. An enemy can only have one instance of blind at a time.
+    - property: 1
+      modType: 0
+      specialTag: 2
+      tags: 0
+      overrideAltText: Adds to your chance to cause bleeding when you hit an enemy. Bleeding deals physical damage over time. An enemy can have multiple instances of bleeding at once.
+    - property: 1
+      modType: 0
+      specialTag: 5
+      tags: 0
+      overrideAltText: Adds to your chance to shock an enemy when you hit it. Shock reduces stun avoidance and elemental protection by 100 for 4 seconds. An enemy can have multiple instances of shock at once.
+    - property: 1
+      modType: 0
+      specialTag: 23
+      tags: 0
+      overrideAltText: Adds to your chance to inflict frostbite on an enemy when you hit it. Frostbite deals cold damage over time and reduces cold protection. An enemy can be inflicted with multiple instances of frostbite at once.
+    - property: 1
+      modType: 0
+      specialTag: 18
+      tags: 0
+      overrideAltText: Plague deals poison damage over time and spreads between enemies. An enemy can only have one instance of plague at a time.
+    - property: 1
+      modType: 0
+      specialTag: 9
+      tags: 0
+      overrideAltText: Time rot reduces attack and cast speed by 15%, increases stun duration by 25%, and deals void damage over time. An enemy can only have one instance of plague at a time.
+    - property: 1
+      modType: 0
+      specialTag: 10
+      tags: 0
+      overrideAltText: Adds a chance to inflict a future attack 2 seconds after you hit an enemy. Future attacks deal 50 void damage.
+    - property: 1
+      modType: 0
+      specialTag: 55
+      tags: 0
+      overrideAltText: Spark Charges are spells that explode after 0.7 seconds dealing lightning damage in an area around the target.
+    - property: 1
+      modType: 0
+      specialTag: 39
+      tags: 0
+      overrideAltText: Adds to your chance to apply Damned to an enemy when you hit it. Damned  deals necrotic damage over time and reduces health regen by 20%. An enemy can have multiple stacks of Damned at once.
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Attack Speed
+    property: 2
+    defaultAltText: Increases the number of attacks you can use per second
+    altTextOverrides:
+    - property: 2
+      modType: 1
+      specialTag: 0
+      tags: 512
+      overrideAltText: Increases the number of melee attacks you can use per second
+    - property: 2
+      modType: 1
+      specialTag: 0
+      tags: 8704
+      overrideAltText: Increases the number of melee attacks your minions can use per second
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Cast Speed
+    property: 3
+    defaultAltText: Increases the number of spells you can cast per second
+    altTextOverrides:
+    - property: 3
+      modType: 1
+      specialTag: 0
+      tags: 8192
+      overrideAltText: Increases the number of spells your minions can cast per second
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Critical Strike Chance
+    property: 4
+    defaultAltText: Increases your chance to deal a critical strike. Your base crit chance is 5% so 100% increased crit chance would give you 10% crit chance if there are no other modifiers.
+    altTextOverrides:
+    - property: 4
+      modType: 0
+      specialTag: 0
+      tags: 0
+      overrideAltText: Adds to your base crit chance
+    - property: 4
+      modType: 0
+      specialTag: 0
+      tags: 512
+      overrideAltText: Adds to your base crit chance with melee attacks
+    - property: 4
+      modType: 1
+      specialTag: 0
+      tags: 512
+      overrideAltText: Increases your chance to deal a critical strike with melee attacks. Your base crit chance is 5% so 100% increased crit chance would give you 10% crit chance if there are no other modifiers.
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Critical Strike Multiplier
+    property: 5
+    defaultAltText: Increases the damage dealt by your critical strikes
+    altTextOverrides:
+    - property: 5
+      modType: 0
+      specialTag: 0
+      tags: 512
+      overrideAltText: Increases the damage dealt by your melee critical strikes
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 1
+    propertyName: Damage Taken
+    property: 6
+    defaultAltText: Modifies the damage you take
+    altTextOverrides:
+    - property: 6
+      modType: 1
+      specialTag: 6
+      tags: 0
+      overrideAltText: Reduces the damage you take when you block a hit
+    - property: 6
+      modType: 2
+      specialTag: 0
+      tags: 4096
+      overrideAltText: Reduces the damage you take from damage over time (multiplicative with other modifiers)
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Health
+    property: 7
+    defaultAltText: Increases your maximum health
+    altTextOverrides:
+    - property: 7
+      modType: 0
+      specialTag: 0
+      tags: 8192
+      overrideAltText: Adds to the maximum health of your minions
+    - property: 7
+      modType: 1
+      specialTag: 0
+      tags: 8192
+      overrideAltText: Increases the maximum health of your minions
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Mana
+    property: 8
+    defaultAltText: Increases your maximum mana
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Movement Speed
+    property: 9
+    defaultAltText: Increases how quickly you can run
+    altTextOverrides:
+    - property: 9
+      modType: 1
+      specialTag: 0
+      tags: 8192
+      overrideAltText: Increases the movement speed of your minions
+    - property: 9
+      modType: 1
+      specialTag: 0
+      tags: 65536
+      overrideAltText: Increases your movement speed if you have used a potion in the past 4 seconds
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Armor
+    property: 10
+    defaultAltText: Armour protects against physical damage. 10 armour grants 10 effective health against physical damage.
+    altTextOverrides:
+    - property: 10
+      modType: 0
+      specialTag: 0
+      tags: 8192
+      overrideAltText: Increases the armour of your minions
+    - property: 10
+      modType: 1
+      specialTag: 0
+      tags: 0
+      overrideAltText: Increases your armour from all sources
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Dodge Rating
+    property: 11
+    defaultAltText: Improves your chance to dodge
+    altTextOverrides:
+    - property: 11
+      modType: 0
+      specialTag: 0
+      tags: 8192
+      overrideAltText: Improves the chance for your minions to dodge
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Stun Avoidance
+    property: 12
+    defaultAltText: All hits can have a chance to stun you based on their damage. Stun Avoidance reduces that chance.
+    altTextOverrides:
+    - property: 12
+      modType: 0
+      specialTag: 0
+      tags: 65536
+      overrideAltText: Increases your stun avoidance when you use your potion by pressing E. Stun avoidance reduces your chance to be stunned.
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Fire Protection
+    property: 13
+    defaultAltText: Protects against fire damage. 10 fire protection grants 10 effective health against fire damage.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Cold Protection
+    property: 14
+    defaultAltText: Protects against cold damage. 10 cold protection grants 10 effective health against cold damage.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Lightning Protection
+    property: 15
+    defaultAltText: Protects against lightning damage. 10 lightning protection grants 10 effective health against lightning damage.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Ward Retention
+    property: 16
+    defaultAltText: Ward is decaying shield with no limit, that steadily decays. Ward retention reduces the rate at which your ward decays.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Health Regen
+    property: 17
+    defaultAltText: Increases the rate at which your health regenerates over time
+    altTextOverrides:
+    - property: 17
+      modType: 1
+      specialTag: 0
+      tags: 8192
+      overrideAltText: Increases the rate at which your minions regenerate health
+    - property: 17
+      modType: 1
+      specialTag: 0
+      tags: 65536
+      overrideAltText: Increases your health regen if you have used a potion in the past 4 seconds
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Mana Regen
+    property: 18
+    defaultAltText: Increases the rate at which your mana regenerates over time
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Strength
+    property: 19
+    defaultAltText: Each point of strength increases armour by 5% and improves skills that rely the raw strength of you and your companions
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Vitality
+    property: 20
+    defaultAltText: Each point of vitality grants 15 void protection, necrotic protection, and poison protection.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Intelligence
+    property: 21
+    defaultAltText: Each point of intelligence grants 4% ward retention and improves skills that rely on carefully studied magic
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Dexterity
+    property: 22
+    defaultAltText: Each point of dexterity adds 5 dodge rating and improves skills that rely on the skillfull handling of weapons
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Attunement
+    property: 23
+    defaultAltText: Each point of attunement grants 5 elemental protection and improves skills that rely on the innate magic inside you and your surroundings
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Damage Dealt to Mana Before Health
+    property: 24
+    defaultAltText: A percentage of the damage you take is dealt to your mana instead of your health. Each point of mana shields 5 health.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 1
+    propertyName: Channel Cost
+    property: 25
+    defaultAltText: Modifies the mana cost per second of channelled skills
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Void Protection
+    property: 26
+    defaultAltText: Protects against void damage. 10 void protection grants 10 effective health against void damage.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Necrotic Protection
+    property: 27
+    defaultAltText: Protects against necrotic damage. 10 necrotic protection grants 10 effective health against necrotic damage.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Poison Protection
+    property: 28
+    defaultAltText: Protects against poison damage. 10 poison protection grants 10 effective health against poison damage.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Block Chance
+    property: 29
+    defaultAltText: Adds to your chance to block. When you block your block armour and block elemental protections are added to your armour and elemental protection so you take less physical and elemental damage.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Armour and Protections
+    property: 30
+    defaultAltText: Reduces your damage taken from all damage types
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Health Gain
+    property: 38
+    defaultAltText: Instantly regain health
+    altTextOverrides:
+    - property: 38
+      modType: 0
+      specialTag: 0
+      tags: 8389120
+      overrideAltText: Instantly regain health on melee hit
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Ward Gain
+    property: 39
+    defaultAltText: Instantly gain ward. Ward is a temporary shield that decays over time based on the amount you currently have.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Mana Gain
+    property: 40
+    defaultAltText: Instantly regain mana
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Adaptive Spell Damage
+    property: 41
+    defaultAltText: Adds damage to all spells. The type of damage added matches the base damage of the spell.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Increased Ailment Duration
+    property: 42
+    defaultAltText: Increases the duration of ailments you inflict
+    altTextOverrides:
+    - property: 42
+      modType: 0
+      specialTag: 1
+      tags: 0
+      overrideAltText: Increases the duration of ignites you inflict
+    - property: 42
+      modType: 0
+      specialTag: 2
+      tags: 0
+      overrideAltText: Increases the duration of bleeds you inflict
+    - property: 42
+      modType: 0
+      specialTag: 3
+      tags: 0
+      overrideAltText: Increases the duration of chill you inflict
+    - property: 42
+      modType: 0
+      specialTag: 5
+      tags: 0
+      overrideAltText: Increases the duration of shocks you inflict
+    - property: 42
+      modType: 0
+      specialTag: 6
+      tags: 0
+      overrideAltText: Increases the duration of slows you inflict
+    - property: 42
+      modType: 0
+      specialTag: 7
+      tags: 0
+      overrideAltText: Increases the duration of poison you inflict
+    - property: 42
+      modType: 0
+      specialTag: 14
+      tags: 0
+      overrideAltText: Increases the duration of blinds you inflict
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Increased Ailment Effect
+    property: 43
+    defaultAltText: Increases the effect of ailments you inflict
+    altTextOverrides:
+    - property: 43
+      modType: 0
+      specialTag: 1
+      tags: 0
+      overrideAltText: Increases the damage of ignites you inflict (multiplicative with other modifiers)
+    - property: 43
+      modType: 0
+      specialTag: 2
+      tags: 0
+      overrideAltText: Increases the damage of bleeds you inflict (multiplicative with other modifiers)
+    - property: 43
+      modType: 0
+      specialTag: 3
+      tags: 0
+      overrideAltText: Increases the effect of chill you inflict
+    - property: 43
+      modType: 0
+      specialTag: 5
+      tags: 0
+      overrideAltText: Increases the effect of shocks you inflict
+    - property: 43
+      modType: 0
+      specialTag: 6
+      tags: 0
+      overrideAltText: Increases the effect of slows you inflict
+    - property: 43
+      modType: 0
+      specialTag: 7
+      tags: 0
+      overrideAltText: Increases the effect of poison you inflict
+    - property: 43
+      modType: 0
+      specialTag: 14
+      tags: 0
+      overrideAltText: Increases the effect of blinds you inflict
+    - property: 43
+      modType: 0
+      specialTag: 33
+      tags: 0
+      overrideAltText: Increases the movement speed bonus from Haste. 100% increased effect of haste would result in the bonus doubling from 30% to 60%.
+    - property: 43
+      modType: 0
+      specialTag: 18
+      tags: 0
+      overrideAltText: Increases the damage of Plague (multiplicative with other modifiers)
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Increased Healing Effectiveness
+    property: 44
+    defaultAltText: Increases the health restored by healing skills
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Increased Stun Chance
+    property: 45
+    defaultAltText: All your hits have a chance to stun if they deal enough damage. Increased stun chance increases that chance.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 1
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: All Attributes
+    property: 46
+    defaultAltText: Adds to your Strength, Dexterity, Intelligence, Attunement, and Vitality.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Increased Chance To Find Potions
+    property: 47
+    defaultAltText: Increases your chance to find potions. Potions are displayed next to your health globe, and can be consumed to gain health (by using the 1 key by default).
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Health Gained On Potion Use
+    property: 48
+    defaultAltText: Potions are displayed next to your health globe, and can be consumed to gain health (by using the 1 key by default).
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Potion Slots
+    property: 49
+    defaultAltText: Adds to your maximum number of potions. Potions are displayed next to your health globe, and can be consumed to gain health (by using the 1 key by default).
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 1
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Damage Leeched as Health
+    property: 51
+    defaultAltText: A percentage of your damage is returned to you as health over three seconds.
+    altTextOverrides:
+    - property: 51
+      modType: 0
+      specialTag: 0
+      tags: 512
+      overrideAltText: A percentage of the damage dealt by your melee attacks is returned to you as health over three seconds.
+    - property: 51
+      modType: 0
+      specialTag: 1
+      tags: 0
+      overrideAltText: A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.
+    - property: 51
+      modType: 1
+      specialTag: 0
+      tags: 0
+      overrideAltText: Increases the amount of damage you leech as health
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Elemental Protection
+    property: 52
+    defaultAltText: Protects against fire, cold, and lightning damage. 10 elemental protection is like 10 effective health against fire, cold, and lightning damage.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Block Effectiveness
+    property: 53
+    defaultAltText: Block Effectiveness is added to your armour and protections for hits that you block.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Increased Stun Immunity Duration
+    property: 55
+    defaultAltText: By defaylt when you are stunned you become immune to stuns for one second after the stun ends. This increases the duration of that immunity.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Increased Shock Effect (deprecated)
+    property: 56
+    defaultAltText: Increases the effect of shocks you inflict. Shock reduces tenacity and elemental protection by 100 for 4 seconds. An enemy can have multiple instances of shock at once.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Dark Protection (deprecated)
+    property: 58
+    defaultAltText: Protects against void, poison, and necrotic damage. 10 dark protection is like 10 effective health against void, poison, or necrotic damage.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Penetration
+    property: 59
+    defaultAltText: Penetrates the armour or relevant protection of enemies. This is particularly effective against enemies with low maximum health.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Chance to receive a Glancing Blow when hit
+    property: 62
+    defaultAltText: Grants a chance to recive a glancing blow when hit. You take half damage from glancing blows.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 1
+    propertyName: Mana Cost
+    property: 66
+    defaultAltText: Modifies the cost of skills you use
+    altTextOverrides:
+    - property: 66
+      modType: 0
+      specialTag: 0
+      tags: 256
+      overrideAltText: Modifies the cost of spells you use
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Freeze Rate Multiplier
+    property: 67
+    defaultAltText: Cold skills have a chance to freeze on hit equal to their freeze rate divided by the target's health.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Mana Efficiency
+    property: 69
+    defaultAltText: 'Increases the efficiency of your mana usage
+
+    Mana cost = base mana cost / (1 + mana efficiency)'
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Increased Cooldown Recovery Speed
+    property: 70
+    defaultAltText: Increases the speed at which your skills come off cooldown
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Mana Regen while out of Mana
+    property: 64
+    defaultAltText: Increases the rate at which your mana regenerates, but only while your current mana is at or below 0.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 1
+    propertyName: of Current Health Drained per Second
+    property: 60
+    defaultAltText: Drains a percent of your current health per second. You can't die from this effect
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Cull on Hit
+    property: 65
+    defaultAltText: Enemies are killed at this percentage of their health
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Damage Taken as Lightning
+    property: 34
+    defaultAltText: Damage converted to lightning before mitigation
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Damage Taken as Physical
+    property: 31
+    defaultAltText: Damage converted to physical before mitigation
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Damage Taken as Fire
+    property: 32
+    defaultAltText: Damage converted to fire before mitigation
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Damage Taken as Cold
+    property: 33
+    defaultAltText: Damage converted to cold before mitigation
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Damage Taken as Void
+    property: 36
+    defaultAltText: Damage converted to void before mitigation
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Damage Taken as Poison
+    property: 37
+    defaultAltText: Damage converted to poison before mitigation
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Damage Taken as Necrotic
+    property: 35
+    defaultAltText: Damage converted to necrotic before mitigation
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Maximum Companions
+    property: 61
+    defaultAltText: Increases the maximum number of companions a Primalist can have active at once
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Chance to gain Haste for 1 second on Hit
+    property: 50
+    defaultAltText: Haste is a buff that grants 30% increased movement speed. Haste does not stack.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Chance to Chill Attackers
+    property: 73
+    defaultAltText: Gives you a chance to chill enemies when they hit you. Chill reduces attack speed, cast speed, and movement speed by 12%, and stacks up to 3 times.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Chance to Slow Attackers
+    property: 74
+    defaultAltText: Gives you a chance to slow enemies when they hit you. Slow reduces movement speed by 20% and stacks up to 3 times.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Damage Reflected to Attackers
+    property: 85
+    defaultAltText: Damage is dealt directly to attackers when you take a hit
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Damage Reflected
+    property: 86
+    defaultAltText: A percentage of the damage you take is dealt directly to the attacker. Mitigation applies before reflection. Reflecting damage does not affect how much damage you take.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Chance to Shock Attackers
+    property: 87
+    defaultAltText: Gives you a chance to shock enemies when they hit you. Shock reduces stun avoidance and elemental protection by 100 for 4 seconds.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Critical Strike Avoidance
+    property: 89
+    defaultAltText: Gives a chance to downgrade an enemy's crit on you to a regular hit. Unmodified enemies have a 5% crit chance.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Potion Health Converted to Ward
+    property: 90
+    defaultAltText: A percentage of the health you would gain from using a potion is gained as ward instead. There is no effect above 100%.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Ward Gained on Potion Use
+    property: 91
+    defaultAltText: Ward is a decaying shield that protects your health
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 1
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Overkill Damage Leeched as Health
+    property: 93
+    defaultAltText: When you kill an enemy with a hit a percentage of the excess damage is returned to you as health over three seconds.
+    altTextOverrides: []
+  - roundAddedToInt: 1
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Ward per Second
+    property: 92
+    defaultAltText: Causes you to generate ward over time. Ward naturally decays over time so your total ward will stabilise at a point where the regen is equal to the decay.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Damage Dealt to Mana Before Health or Ward
+    property: 94
+    defaultAltText: A percentage of the damage you take is dealt to your mana instead of your health or ward. Each point of mana shields 5 health.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Increased Stun Duration
+    property: 95
+    defaultAltText: Increases the duration of stuns you inflict
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 0
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 1
+    dontDisplayPlus: 0
+    lessIsBetter: 1
+    propertyName: Duration of Stuns Received
+    property: 71
+    defaultAltText: Reduces the duration of stuns on you
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Chance to Gain 30 Ward when Hit
+    property: 97
+    defaultAltText: Ward is a decaying overshield that protect your health. Extra chance above 100% has no effect. Applies after damage taken, unless the damage would be lethal.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Mana Spent Gained as Ward
+    property: 99
+    defaultAltText: Ward is a decaying overshield that protect your health. Only affects mana spent, not mana drained.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 1
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Ailment Conversion
+    property: 100
+    defaultAltText:
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 1
+    lessIsBetter: 0
+    propertyName: Increased Leech Rate
+    property: 102
+    defaultAltText: Increases the speed at which health is gained from Health Leech. Does not change the total amount leeched.
+    altTextOverrides: []
+  - roundAddedToInt: 0
+    displayAddedAsPercentage: 1
+    displayAddedAsTenthOfValue: 0
+    displayAsPercentageOf: 0
+    displayAsAddedTo: 0
+    dontDisplayPlus: 0
+    lessIsBetter: 0
+    propertyName: Freeze Rate Per Stack of Chill
+    property: 103
+    defaultAltText:
+    altTextOverrides: []
