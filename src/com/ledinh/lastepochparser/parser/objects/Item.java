@@ -1,4 +1,4 @@
-package com.ledinh.lastepochparser.parser;
+package com.ledinh.lastepochparser.parser.objects;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -154,8 +154,10 @@ public class Item {
     private int baseTypeID;
     private int maximumAffixes;
     private int maxSockets;
+    private float affixEffectModifier;
     private int gridSizeX;
     private int gridSizeY;
+    private int type;
     private int isWeapon;
     private int minimumDropLevel;
     private String name;
@@ -167,7 +169,7 @@ public class Item {
     private List<Attribute> attributes;
     private int classRequirement;
     private int subClassRequirement;
-    private int attackRate;
+    private float attackRate;
 
     public Item() {
         attributes = new ArrayList<>();
@@ -175,6 +177,22 @@ public class Item {
 
     public List<Attribute> getAttributes() {
         return attributes;
+    }
+
+    public float getAffixEffectModifier() {
+        return affixEffectModifier;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public void setAffixEffectModifier(float affixEffectModifier) {
+        this.affixEffectModifier = affixEffectModifier;
     }
 
     public void addAttribute(Attribute attribute) {
@@ -317,11 +335,11 @@ public class Item {
         this.subClassRequirement = subClassRequirement;
     }
 
-    public int getAttackRate() {
+    public float getAttackRate() {
         return attackRate;
     }
 
-    public void setAttackRate(int attackRate) {
+    public void setAttackRate(float attackRate) {
         this.attackRate = attackRate;
     }
 }

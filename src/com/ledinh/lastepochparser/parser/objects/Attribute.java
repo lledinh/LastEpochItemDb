@@ -1,4 +1,4 @@
-package com.ledinh.lastepochparser.parser;
+package com.ledinh.lastepochparser.parser.objects;
 
 public class Attribute {
     private Property property;

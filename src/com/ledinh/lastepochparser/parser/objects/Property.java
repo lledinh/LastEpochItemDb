@@ -1,4 +1,4 @@
-package com.ledinh.lastepochparser.parser;
+package com.ledinh.lastepochparser.parser.objects;
 
 public class Property {
     private String propertyName;
