@@ -14,6 +14,7 @@ public class Property {
     private int specialTag;
     private int tags;
     private int modType;
+    private String overrideAltText;
 
     public int getRoundAddedToInt() {
         return roundAddedToInt;
@@ -117,5 +118,13 @@ public class Property {
 
     public void setDefaultAltText(String defaultAltText) {
         this.defaultAltText = defaultAltText;
+    }
+
+    public String getOverrideAltText() {
+        return overrideAltText;
+    }
+
+    public void setOverrideAltText(String overrideAltText) {
+        this.overrideAltText = overrideAltText;
     }
 }

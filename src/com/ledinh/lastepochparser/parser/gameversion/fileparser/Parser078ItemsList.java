@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.ledinh.lastepochparser.parser.ParserUtils.getAttributeValue;
+
 public class Parser078ItemsList implements ParserItemsList {
     private static final String TAG_EQUIPPABLE_ITEMS = "EquippableItems";
     private static final String TAG_NON_EQUIPPABLE_ITEMS = "nonEquippableItems";
@@ -182,15 +184,5 @@ public class Parser078ItemsList implements ParserItemsList {
         item.setAttackRate(Float.parseFloat(subItem.get("attackRate")));
 
         return item;
-    }
-
-    private String[] getAttributeValue(String line) {
-        String[] attribute = new String[2];
-        line = line.trim();
-        String[] tokens = line.split(":");
-        attribute[0] = tokens[0];
-        attribute[1] = tokens.length >= 2 ? tokens[1].trim() : null;
-
-        return attribute;
     }
 }

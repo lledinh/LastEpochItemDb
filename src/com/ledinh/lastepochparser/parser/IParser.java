@@ -1,12 +1,13 @@
 package com.ledinh.lastepochparser.parser;
 
 import com.ledinh.lastepochparser.parser.objects.Item;
+import com.ledinh.lastepochparser.parser.objects.Property;
 
 import java.util.List;
 
 public interface IParser {
-    public List<Item> parseItems(String data);
-    public void parseProperties(String data);
-    public void parseAffixes(String data);
-    public void parseUniques(String data);
+    List<Item> parseItems(String data);
+    List<Property> parseProperties(String data);
+    void parseAffixes(String data);
+    void parseUniques(String data);
 }

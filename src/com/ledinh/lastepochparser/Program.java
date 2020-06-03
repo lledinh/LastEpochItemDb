@@ -4,6 +4,7 @@ import com.ledinh.lastepochparser.conf.AssetsConfReader;
 import com.ledinh.lastepochparser.conf.AssetsPath;
 import com.ledinh.lastepochparser.parser.IParser;
 import com.ledinh.lastepochparser.parser.objects.Item;
+import com.ledinh.lastepochparser.parser.objects.Property;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -17,7 +18,23 @@ public class Program {
         gameDataExtractor.extract();
 
         List<Item> items = gameDataExtractor.getItems();
+        List<Property> properties = gameDataExtractor.getProperties();
 
+        printProperties(properties);
+    }
+
+    public static void printProperties(List<Property> properties) {
+        for (Property property: properties) {
+            if (property.getOverrideAltText() != null) {
+                System.out.println(property.getProperty() + " => " + property.getOverrideAltText());
+            }
+            else {
+                System.out.println(property.getProperty() + " => " + property.getDefaultAltText());
+            }
+        }
+    }
+
+    public static void printItems(List<Item> items) {
         Map<String, Integer> occ = new HashMap<>();
         Map<String, Integer> occ2 = new HashMap<>();
 
