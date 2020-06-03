@@ -22,6 +22,7 @@ public class Parser078ItemsList implements ParserItemsList {
     private static final String TAG_CLASS_REQUIREMENT = "classRequirement";
 
     public List<Item> parseItems(String data) {
+        List<Item> items = new ArrayList<>();
 
         String[] lines = data.split("\n");
         List<String> linesEquippableItems = new ArrayList<>();
@@ -44,7 +45,6 @@ public class Parser078ItemsList implements ParserItemsList {
 
         Map<String, Map<String, String>> baseTypeItem = new HashMap<>();
 //            Map<String, Map<String, String>> subItems = new HashMap<>();
-        List<Item> items = new ArrayList<>();
 
         Map<String, String> baseTypeItemAttributes = null;
         boolean limitReached = false;

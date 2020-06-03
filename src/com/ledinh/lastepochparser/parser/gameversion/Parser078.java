@@ -31,7 +31,7 @@ public class Parser078 implements IParser {
     }
 
     @Override
-    public void parseAffixes(String data) {
+    public List<Affix> parseAffixes(String data) {
 
     }
 
