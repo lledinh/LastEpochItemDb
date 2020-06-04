@@ -10,5 +10,5 @@ public interface IParser {
     List<Item> parseItems(String data);
     List<Property> parseProperties(String data);
     List<Affix> parseAffixes(String data);
-    void parseUniques(String data);
+    List<Item> parseUniques(String data);
 }

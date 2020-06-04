@@ -4,6 +4,7 @@ import com.ledinh.lastepochparser.conf.AssetsConfReader;
 import com.ledinh.lastepochparser.conf.AssetsPath;
 import com.ledinh.lastepochparser.parser.AvailableParser;
 import com.ledinh.lastepochparser.parser.IParser;
+import com.ledinh.lastepochparser.parser.objects.Affix;
 import com.ledinh.lastepochparser.parser.objects.Item;
 import com.ledinh.lastepochparser.parser.objects.Property;
 
@@ -16,6 +17,7 @@ import java.util.List;
 public class GameDataExtractor {
     private List<Item> items;
     private List<Property> properties;
+    private List<Affix> affixes;
 
     public void extract() throws IOException {
         AssetsPath assetsPath = AssetsConfReader.read();
@@ -26,6 +28,9 @@ public class GameDataExtractor {
 
         s = readFile(assetsPath.getPropertyListPath(), Charset.defaultCharset());
         properties = parser.parseProperties(s);
+
+        s = readFile(assetsPath.getAffixListPath(), Charset.defaultCharset());
+        affixes = parser.parseAffixes(s);
     }
 
     public String readFile(String path, Charset encoding)
@@ -40,5 +45,9 @@ public class GameDataExtractor {
 
     public List<Property> getProperties() {
         return properties;
+    }
+
+    public List<Affix> getAffixes() {
+        return affixes;
     }
 }

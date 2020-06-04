@@ -65,8 +65,8 @@ public class Affix {
     private int rollsOn;
     private int classSpecificity;
     private int type;
-    private int standardAffixEffectModifier;
-    private int rerollChance;
+    private float standardAffixEffectModifier;
+    private float rerollChance;
     private int weaponEffect;
     private int group;
     private float shardHueShift;
@@ -147,19 +147,19 @@ public class Affix {
         this.type = type;
     }
 
-    public int getStandardAffixEffectModifier() {
+    public float getStandardAffixEffectModifier() {
         return standardAffixEffectModifier;
     }
 
-    public void setStandardAffixEffectModifier(int standardAffixEffectModifier) {
+    public void setStandardAffixEffectModifier(float standardAffixEffectModifier) {
         this.standardAffixEffectModifier = standardAffixEffectModifier;
     }
 
-    public int getRerollChance() {
+    public float getRerollChance() {
         return rerollChance;
     }
 
-    public void setRerollChance(int rerollChance) {
+    public void setRerollChance(float rerollChance) {
         this.rerollChance = rerollChance;
     }
 

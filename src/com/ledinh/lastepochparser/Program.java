@@ -3,6 +3,7 @@ package com.ledinh.lastepochparser;
 import com.ledinh.lastepochparser.conf.AssetsConfReader;
 import com.ledinh.lastepochparser.conf.AssetsPath;
 import com.ledinh.lastepochparser.parser.IParser;
+import com.ledinh.lastepochparser.parser.objects.Affix;
 import com.ledinh.lastepochparser.parser.objects.Item;
 import com.ledinh.lastepochparser.parser.objects.Property;
 
@@ -19,8 +20,16 @@ public class Program {
 
         List<Item> items = gameDataExtractor.getItems();
         List<Property> properties = gameDataExtractor.getProperties();
+        List<Affix> affixes = gameDataExtractor.getAffixes();
+        printAffixes(affixes);
+    }
 
-        printProperties(properties);
+    public static void printAffixes(List<Affix> affixes) {
+        System.out.println("affixes.size = " + affixes.size());
+
+        for (Affix affix: affixes) {
+            System.out.println(affix.getAffixName());
+        }
     }
 
     public static void printProperties(List<Property> properties) {

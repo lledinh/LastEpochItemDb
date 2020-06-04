@@ -1,10 +1,8 @@
 package com.ledinh.lastepochparser.parser.gameversion;
 
 import com.ledinh.lastepochparser.parser.IParser;
-import com.ledinh.lastepochparser.parser.gameversion.fileparser.Parser078PropertyList;
-import com.ledinh.lastepochparser.parser.gameversion.fileparser.ParserItemsList;
-import com.ledinh.lastepochparser.parser.gameversion.fileparser.Parser078ItemsList;
-import com.ledinh.lastepochparser.parser.gameversion.fileparser.ParserPropertyList;
+import com.ledinh.lastepochparser.parser.gameversion.fileparser.*;
+import com.ledinh.lastepochparser.parser.objects.Affix;
 import com.ledinh.lastepochparser.parser.objects.Item;
 import com.ledinh.lastepochparser.parser.objects.Property;
 
@@ -14,10 +12,12 @@ import java.util.List;
 public class Parser078 implements IParser {
     ParserItemsList parserItemsList;
     ParserPropertyList parserPropertyList;
+    ParserAffixesList parserAffixesList;
 
     public Parser078() {
         parserItemsList = new Parser078ItemsList();
         parserPropertyList = new Parser078PropertyList();
+        parserAffixesList = new Parser078AffixesList();
     }
 
     @Override
@@ -32,12 +32,12 @@ public class Parser078 implements IParser {
 
     @Override
     public List<Affix> parseAffixes(String data) {
-
+        return parserAffixesList.parseAffixes(data);
     }
 
     @Override
-    public void parseUniques(String data) {
-
+    public List<Item> parseUniques(String data) {
+        return null;
     }
 
 }
