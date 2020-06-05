@@ -15,8 +15,12 @@ public class ConfReader {
         Stream<String> stream = Files.lines(Paths.get(filePath));
 
         stream.forEach(s -> {
-            String[] tokens = s.split("=");
-            map.put(tokens[0], tokens[1]);
+            if (!s.isEmpty()) {
+                int equalIndex = s.indexOf("=");
+                String property = s.substring(0, equalIndex);
+                String propertyValue = s.substring(equalIndex + 1);
+                map.put(property, propertyValue);
+            }
         });
 
         return map;

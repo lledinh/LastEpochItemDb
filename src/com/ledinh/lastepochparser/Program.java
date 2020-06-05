@@ -2,6 +2,7 @@ package com.ledinh.lastepochparser;
 
 import com.ledinh.lastepochparser.conf.AssetsConfReader;
 import com.ledinh.lastepochparser.conf.AssetsPath;
+import com.ledinh.lastepochparser.db.DB;
 import com.ledinh.lastepochparser.parser.IParser;
 import com.ledinh.lastepochparser.parser.objects.Affix;
 import com.ledinh.lastepochparser.parser.objects.Item;
@@ -11,17 +12,20 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.sql.SQLException;
 import java.util.*;
 
 public class Program {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, SQLException, ClassNotFoundException {
         GameDataExtractor gameDataExtractor = new GameDataExtractor();
         gameDataExtractor.extract();
 
         List<Item> items = gameDataExtractor.getItems();
         List<Property> properties = gameDataExtractor.getProperties();
         List<Affix> affixes = gameDataExtractor.getAffixes();
-        printAffixes(affixes);
+
+        DB db =  new DB();
+        db.populate(items);
     }
 
     public static void printAffixes(List<Affix> affixes) {
