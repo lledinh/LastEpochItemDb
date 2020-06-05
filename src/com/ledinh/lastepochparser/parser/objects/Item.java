@@ -149,6 +149,67 @@ import java.util.List;
 
  */
 public class Item {
+    public static class Property {
+        private int property;
+        private int specialTag;
+        private int tags;
+        private int type;
+        private float implicitValue;
+        private float implicitMaxValue;
+
+        public Property() {
+
+        }
+
+        public int getProperty() {
+            return property;
+        }
+
+        public void setProperty(int property) {
+            this.property = property;
+        }
+
+        public int getSpecialTag() {
+            return specialTag;
+        }
+
+        public void setSpecialTag(int specialTag) {
+            this.specialTag = specialTag;
+        }
+
+        public int getTags() {
+            return tags;
+        }
+
+        public void setTags(int tags) {
+            this.tags = tags;
+        }
+
+        public int getType() {
+            return type;
+        }
+
+        public void setType(int type) {
+            this.type = type;
+        }
+
+        public float getImplicitValue() {
+            return implicitValue;
+        }
+
+        public void setImplicitValue(float implicitValue) {
+            this.implicitValue = implicitValue;
+        }
+
+        public float getImplicitMaxValue() {
+            return implicitMaxValue;
+        }
+
+        public void setImplicitMaxValue(float implicitMaxValue) {
+            this.implicitMaxValue = implicitMaxValue;
+        }
+    }
+
     private String baseTypeName;
     private String baseDisplayName;
     private int baseTypeID;
@@ -166,17 +227,17 @@ public class Item {
     private int levelRequirement;
     private int cannotDrop;
     private int itemTags;
-    private List<Attribute> attributes;
+    private List<Property> itemProperties;
     private int classRequirement;
     private int subClassRequirement;
     private float attackRate;
 
     public Item() {
-        attributes = new ArrayList<>();
+        itemProperties = new ArrayList<>();
     }
 
-    public List<Attribute> getAttributes() {
-        return attributes;
+    public List<Property> getItemProperties() {
+        return itemProperties;
     }
 
     public float getAffixEffectModifier() {
@@ -195,8 +256,8 @@ public class Item {
         this.affixEffectModifier = affixEffectModifier;
     }
 
-    public void addAttribute(Attribute attribute) {
-        attributes.add(attribute);
+    public void addAttribute(Property itemProperty) {
+        itemProperties.add(itemProperty);
     }
 
     public String getBaseTypeName() {

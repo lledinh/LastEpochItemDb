@@ -59,12 +59,13 @@ public class Parser078AffixesList implements ParserAffixesList {
                     affixAttributes.put(attribute[0], attribute[1]);
                 }
                 else if (line.contains("specificRerollChances")) {
-                    boolean skippingSpecificRerollChances = true;
+                    String[] attribute = getAttributeValue(line);
+                    boolean skippingSpecificRerollChances = attribute[1] == null;
 
                     while(skippingSpecificRerollChances) {
-                        skippingSpecificRerollChances = !line.contains("tiers");
                         k++;
-                        line = linesAffix.get(k);
+                        line = linesAffix.get(k + 1);
+                        skippingSpecificRerollChances = !line.contains("tiers");
                     }
                 }
                 else if (line.contains("tiers")) {
@@ -104,9 +105,12 @@ public class Parser078AffixesList implements ParserAffixesList {
                             }
                         }
 
-                        parseTiers = !line.contains("property");
-                        k++;
-                        line = linesAffix.get(k);
+                        parseTiers = !linesAffix.get(k + 1).contains("property");
+
+                        if (parseTiers) {
+                            k++;
+                            line = linesAffix.get(k);
+                        }
                     }
                 }
                 else {
@@ -129,8 +133,9 @@ public class Parser078AffixesList implements ParserAffixesList {
     private Affix buildAffix(Map<String, String> affixAttributes, List<Affix.Tier> affixTiers) {
         Affix affix = new Affix();
 
-        for (Affix.Tier tier: affixTiers) {
-            affix.addTier(tier);
+        for (int i = 0; i < affixTiers.size(); i++) {
+            affixTiers.get(i).setTierLevel(i);
+            affix.addTier(affixTiers.get(i));
         }
 
         affix.setAffixName(affixAttributes.get("- affixName"));

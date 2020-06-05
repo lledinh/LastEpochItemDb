@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Affix {
     public static class Tier {
+        private int tierLevel;
         private int requiredLevel;
         private float minRoll;
         private float maxRoll;
@@ -14,6 +15,14 @@ public class Affix {
 
         public Tier() {
 
+        }
+
+        public int getTierLevel() {
+            return tierLevel;
+        }
+
+        public void setTierLevel(int tierLevel) {
+            this.tierLevel = tierLevel;
         }
 
         public int getRequiredLevel() {

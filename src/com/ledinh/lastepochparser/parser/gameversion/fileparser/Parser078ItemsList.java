@@ -83,14 +83,19 @@ public class Parser078ItemsList implements ParserItemsList {
                     line = linesEquippableItems.get(k);
                 }
                 Map<String, String> subItem = null;
+                List<Item.Property> properties = null;
+                Item.Property property = null;
+                Map<String, String> propertyValuesMap = null;
                 while (parsingSubItems) {
                     if (line.contains(TAG_NAME)) {
                         if (subItem != null && baseTypeItemAttributes != null) {
-                            Item item = buildItem(baseTypeItemAttributes, subItem);
+                            Item item = buildItem(baseTypeItemAttributes, subItem, properties);
                             items.add(item);
                         }
 
+                        properties = new ArrayList<>();
                         subItem = new HashMap<>();
+
                         String[] attribute = getAttributeValue(line);
                         subItem.put(attribute[0], attribute[1]);
                     } else if (line.contains(TAG_UNIQUE_LIST)) {
@@ -106,15 +111,55 @@ public class Parser078ItemsList implements ParserItemsList {
                             subItem.put(attribute[0], attribute[1]);
                         }
                     } else if (line.contains(TAG_IMPLICITS)) {
-                        boolean skippingImplicits = true;
-                        while (skippingImplicits) {
-                            line = linesEquippableItems.get(k + 1);
-                            skippingImplicits = !line.contains(TAG_CLASS_REQUIREMENT);
+                        String[] attributeImplicits = getAttributeValue(line);
+                        boolean parseImplicits = (attributeImplicits[1] == null);
+                        property = null;
+                        propertyValuesMap = null;
+                        if (parseImplicits) {
                             k++;
-                        }
-                        String[] attribute = getAttributeValue(line);
-                        if (subItem != null) {
-                            subItem.put(attribute[0], attribute[1]);
+
+                            while (parseImplicits) {
+                                line = linesEquippableItems.get(k);
+                                parseImplicits = !line.contains(TAG_CLASS_REQUIREMENT);
+
+                                if (!parseImplicits && propertyValuesMap != null && properties != null) {
+                                    property.setProperty(Integer.parseInt(propertyValuesMap.get("- property")));
+                                    property.setSpecialTag(Integer.parseInt(propertyValuesMap.get("specialTag")));
+                                    property.setTags(Integer.parseInt(propertyValuesMap.get("tags")));
+                                    property.setType(Integer.parseInt(propertyValuesMap.get("type")));
+                                    property.setImplicitValue(Float.parseFloat(propertyValuesMap.get("implicitValue")));
+                                    property.setImplicitMaxValue(Float.parseFloat(propertyValuesMap.get("implicitMaxValue")));
+                                    properties.add(property);
+                                }
+                                else {
+                                    if (line.contains("property")) {
+                                        if (properties != null && property != null) {
+                                            property.setProperty(Integer.parseInt(propertyValuesMap.get("- property")));
+                                            property.setSpecialTag(Integer.parseInt(propertyValuesMap.get("specialTag")));
+                                            property.setTags(Integer.parseInt(propertyValuesMap.get("tags")));
+                                            property.setType(Integer.parseInt(propertyValuesMap.get("type")));
+                                            property.setImplicitValue(Float.parseFloat(propertyValuesMap.get("implicitValue")));
+                                            property.setImplicitMaxValue(Float.parseFloat(propertyValuesMap.get("implicitMaxValue")));
+                                            properties.add(property);
+                                        }
+
+                                        property = new Item.Property();
+                                        propertyValuesMap = new HashMap<>();
+                                    }
+
+                                    if (propertyValuesMap != null) {
+                                        String[] attribute = getAttributeValue(line);
+                                        propertyValuesMap.put(attribute[0], attribute[1]);
+                                    }
+
+                                    k++;
+                                }
+                            }
+
+                            String[] attribute = getAttributeValue(line);
+                            if (subItem != null) {
+                                subItem.put(attribute[0], attribute[1]);
+                            }
                         }
                     } else if (subItem != null) {
                         String[] attribute = getAttributeValue(line);
@@ -138,8 +183,16 @@ public class Parser078ItemsList implements ParserItemsList {
                     // We parsed each line of subItems or we have no more line to parse.
                     // Add the current item to the item list
                     if (!parsingSubItems) {
-                        if (baseTypeItemAttributes != null) {
-                            Item item = buildItem(baseTypeItemAttributes, subItem);
+                        if (baseTypeItemAttributes != null && property != null) {
+                            property.setProperty(Integer.parseInt(propertyValuesMap.get("- property")));
+                            property.setSpecialTag(Integer.parseInt(propertyValuesMap.get("specialTag")));
+                            property.setTags(Integer.parseInt(propertyValuesMap.get("tags")));
+                            property.setType(Integer.parseInt(propertyValuesMap.get("type")));
+                            property.setImplicitValue(Float.parseFloat(propertyValuesMap.get("implicitValue")));
+                            property.setImplicitMaxValue(Float.parseFloat(propertyValuesMap.get("implicitMaxValue")));
+                            properties.add(property);
+
+                            Item item = buildItem(baseTypeItemAttributes, subItem, properties);
                             items.add(item);
                         }
                     }
@@ -160,8 +213,9 @@ public class Parser078ItemsList implements ParserItemsList {
         return items;
     }
 
-    private Item buildItem(Map<String, String> baseTypeItemAttributes, Map<String, String> subItem) {
+    private Item buildItem(Map<String, String> baseTypeItemAttributes, Map<String, String> subItem, List<Item.Property> properties) {
         Item item = new Item();
+
         item.setBaseTypeName(baseTypeItemAttributes.get(TAG_BASE_TYPE_NAME));
         item.setBaseDisplayName(baseTypeItemAttributes.get("displayName"));
         item.setBaseTypeID(Integer.parseInt(baseTypeItemAttributes.get("baseTypeID")));
@@ -182,6 +236,10 @@ public class Parser078ItemsList implements ParserItemsList {
         item.setClassRequirement(Integer.parseInt(subItem.get("classRequirement")));
         item.setSubClassRequirement(Integer.parseInt(subItem.get("subClassRequirement")));
         item.setAttackRate(Float.parseFloat(subItem.get("attackRate")));
+
+        for (Item.Property property : properties) {
+            item.addAttribute(property);
+        }
 
         return item;
     }
