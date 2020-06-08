@@ -25,7 +25,7 @@ public class Program {
         List<Affix> affixes = gameDataExtractor.getAffixes();
 
         DB db =  new DB();
-        db.populate(items);
+        db.populate(items, properties, affixes);
     }
 
     public static void printAffixes(List<Affix> affixes) {
