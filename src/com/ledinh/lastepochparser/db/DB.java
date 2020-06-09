@@ -18,6 +18,36 @@ public class DB {
 
     }
 
+    public void delete() throws SQLException, IOException, ClassNotFoundException {
+        connect();
+
+        String query = "DELETE FROM `LastEpochItemDB`.`Affix`";
+        PreparedStatement preparedStmt = connection.prepareStatement(query);
+        preparedStmt.execute();
+
+        query = "DELETE FROM `LastEpochItemDB`.`BaseItem`";
+        preparedStmt = connection.prepareStatement(query);
+        preparedStmt.execute();
+
+        query = "DELETE FROM `LastEpochItemDB`.`Item`";
+        preparedStmt = connection.prepareStatement(query);
+        preparedStmt.execute();
+
+        query = "DELETE FROM `LastEpochItemDB`.`ItemProperty`";
+        preparedStmt = connection.prepareStatement(query);
+        preparedStmt.execute();
+
+        query = "DELETE FROM `LastEpochItemDB`.`Property`";
+        preparedStmt = connection.prepareStatement(query);
+        preparedStmt.execute();
+
+        query = "DELETE FROM `LastEpochItemDB`.`Tier`";
+        preparedStmt = connection.prepareStatement(query);
+        preparedStmt.execute();
+
+        close();
+    }
+
     private void read() throws IOException {
         mySQLDatabaseInfo = MySQLConfReader.read();
     }
@@ -26,7 +56,8 @@ public class DB {
         read();
 
         Class.forName("com.mysql.cj.jdbc.Driver");
-        connection = DriverManager.getConnection("jdbc:mysql://" + mySQLDatabaseInfo.getHost() + ":" + mySQLDatabaseInfo.getPort() + "/" + mySQLDatabaseInfo.getDatabase() + "?" + mySQLDatabaseInfo.getQuery(),mySQLDatabaseInfo.getUser(),mySQLDatabaseInfo.getPassword());
+        String url = "jdbc:mysql://" + mySQLDatabaseInfo.getHost() + ":" + mySQLDatabaseInfo.getPort() + "/" + mySQLDatabaseInfo.getDatabase() + "?" + mySQLDatabaseInfo.getQuery();
+        connection = DriverManager.getConnection(url,mySQLDatabaseInfo.getUser(),mySQLDatabaseInfo.getPassword());
     }
 
     public void close() throws SQLException {
@@ -91,7 +122,7 @@ public class DB {
             }
 
             for (Item.Property property : item.getItemProperties()) {
-                String query2 = "INSERT INTO `itemproperty`\n" +
+                String query2 = "INSERT INTO `ItemProperty`\n" +
                         "(`idItem`,\n" +
                         "`idProperty`,\n" +
                         "`specialTag`,\n" +
@@ -155,7 +186,6 @@ public class DB {
                         " values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 
-                // create the mysql insert preparedstatement
                 PreparedStatement preparedStmt = connection.prepareStatement(query);
                 preparedStmt.setString(1, item.getBaseTypeName());
                 preparedStmt.setString(2, item.getBaseDisplayName());
@@ -169,7 +199,6 @@ public class DB {
                 preparedStmt.setInt(10, item.getIsWeapon());
                 preparedStmt.setInt(11, item.getMinimumDropLevel());
 
-                // execute the preparedstatement
                 preparedStmt.execute();
             }
         }
@@ -211,13 +240,89 @@ public class DB {
             preparedStmt.setInt(13, property.getModType());
             preparedStmt.setString(14, property.getOverrideAltText());
 
-            // execute the preparedstatement
             preparedStmt.execute();
         }
     }
 
     private void populateAffixes(List<Affix> affixes) throws SQLException, IOException, ClassNotFoundException {
+        for (Affix affix: affixes) {
+            String query = "INSERT INTO `Affix`\n" +
+                    "(`affixName`,\n" +
+                    "`affixDisplayName`,\n" +
+                    "`affixTitle`,\n" +
+                    "`affixId`,\n" +
+                    "`levelRequirement`,\n" +
+                    "`rollsOn`,\n" +
+                    "`classSpecificity`,\n" +
+                    "`type`,\n" +
+                    "`standardAffixEffectModifier`,\n" +
+                    "`rerollChance`,\n" +
+                    "`weaponEffect`,\n" +
+                    "`group`,\n" +
+                    "`shardHueShift`,\n" +
+                    "`shardSaturationModifier`,\n" +
+                    "`canRollOn`,\n" +
+                    "`property`,\n" +
+                    "`specialTag`,\n" +
+                    "`tags`,\n" +
+                    "`modifierType`,\n" +
+                    "`setProperty`)\n" +
+                    " values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
+            PreparedStatement preparedStmt = connection.prepareStatement(query, new String[]{ "idAffix" });
+            preparedStmt.setString(1, affix.getAffixName());
+            preparedStmt.setString(2, affix.getAffixDisplayName());
+            preparedStmt.setString(3, affix.getAffixTitle());
+            preparedStmt.setInt(4, affix.getAffixId());
+            preparedStmt.setInt(5, affix.getLevelRequirement());
+            preparedStmt.setInt(6, affix.getRollsOn());
+            preparedStmt.setInt(7, affix.getClassSpecificity());
+            preparedStmt.setInt(8, affix.getType());
+            preparedStmt.setFloat(9, affix.getStandardAffixEffectModifier());
+            preparedStmt.setFloat(10, affix.getRerollChance());
+            preparedStmt.setInt(11, affix.getWeaponEffect());
+            preparedStmt.setInt(12, affix.getGroup());
+            preparedStmt.setFloat(13, affix.getShardHueShift());
+            preparedStmt.setFloat(14, affix.getShardSaturationModifier());
+            preparedStmt.setString(15, affix.getCanRollOn());
+            preparedStmt.setInt(16, affix.getProperty());
+            preparedStmt.setInt(17, affix.getSpecialTag());
+            preparedStmt.setInt(18, affix.getTags());
+            preparedStmt.setInt(19, affix.getModifierType());
+            preparedStmt.setInt(20, affix.getSetProperty());
+
+            preparedStmt.execute();
+
+            ResultSet generatedKeys = preparedStmt.getGeneratedKeys();
+
+            int idAffix = -1;
+            if (generatedKeys.next()) {
+                idAffix = generatedKeys.getInt(1);
+            }
+
+            for (Affix.Tier tier: affix.getTiers()) {
+                query = "INSERT INTO `Tier`\n" +
+                        "(`idAffix`,\n" +
+                        "`tierLevel`,\n" +
+                        "`requiredLevel`,\n" +
+                        "`minRoll`,\n" +
+                        "`maxRoll`,\n" +
+                        "`extraRollMinRoll`,\n" +
+                        "`extraRollMaxRoll`)\n" +
+                        " values (?, ?, ?, ?, ?, ?, ?)";
+
+                preparedStmt = connection.prepareStatement(query);
+
+                preparedStmt.setInt(1, idAffix);
+                preparedStmt.setInt(2, tier.getTierLevel());
+                preparedStmt.setInt(3, tier.getRequiredLevel());
+                preparedStmt.setFloat(4, tier.getMinRoll());
+                preparedStmt.setFloat(5, tier.getMaxRoll());
+                preparedStmt.setFloat(6, tier.getExtraRollMinRoll());
+                preparedStmt.setFloat(7, tier.getExtraRollMaxRoll());
+                preparedStmt.execute();
+            }
+        }
     }
 
     public void populate(List<Item> items, List<Property> properties, List<Affix> affixes) throws SQLException, IOException, ClassNotFoundException {
@@ -226,6 +331,7 @@ public class DB {
         populateBaseItem(items);
         populateItems(items);
         populateProperties(properties);
+        populateAffixes(affixes);
 
         close();
     }
